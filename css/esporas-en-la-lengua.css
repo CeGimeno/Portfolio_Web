@@ -1,0 +1,111 @@
+:root{
+       scroll-behavior: smooth;
+        font-size:100%;
+        background-color: var(--color-beige);
+
+        --color-beige: #FFFAEE;
+        --color-azul: #5585FF;
+
+        --tipografia-principal: "Space Grotesk", sans-serif;
+        --tipografia-principal-regular: 400;
+        --tipografia-principal-size: 1.1rem;
+
+}
+*{
+    margin:0;
+    padding:0;
+    border: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a{
+    display: block;
+    color:inherit;
+    text-decoration: none;
+}
+p a{
+    display: inline;
+}
+h1 , h2 , h3 , h4 , h5 , h6 , strong , em , mark, pre, code{
+    font:inherit;
+}
+mark{
+    background-color:transparent;
+}
+picture , img, video , iframe {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: initial;
+}
+svg{
+    display: block;
+    width: initial;
+    height: initial;
+    fill: currentColor;
+}
+
+
+form , input , select , option , textarea , label , fieldset , legend , button{
+    display: block;
+    font:inherit;
+    background-color: initial;
+}
+fieldset {
+    border : none ;
+}
+button , label{
+    cursor: pointer;
+}
+
+main{
+    display: flex;
+    flex-flow: row nowrap;
+
+    gap: 5rem;
+}
+
+.Contenido{
+    background-color: red;
+    width: 70%;
+    margin: 10rem 0rem 0rem;
+}
+
+.Contenido-h1{
+    font-family: var(--tipografia-principal);
+    font-weight: 600;
+    font-size: var(--tipografia-principal-size);
+    text-align: center;
+}
+
+.Contenido-h2{
+    margin: 1rem 0rem;
+    font-family: var(--tipografia-principal);
+    font-weight: 600;
+    font-size: var(--tipografia-principal-size);
+    text-align: center;
+
+}
+
+.Contenido-p{
+    width: 50%;
+    margin: auto;
+
+    font-family: var(--tipografia-principal);
+    font-weight: var(--tipografia-principal-light);
+    font-size: var(--tipografia-principal-size);
+    text-align: center;
+}
+
+.Contenido-grid{
+    display:grid;
+    grid-template-columns: repeat( 2 , 1fr);
+    gap: 1rem;
+}
+
+.Cotenido-img{
+    height: 300px;
+    background-color:blue;
+}

@@ -1,0 +1,267 @@
+:root{
+       scroll-behavior: smooth;
+        font-size:100%;
+        font-family: "Space Grotesk", sans-serif;
+
+        --color-beige: #FFFAEE;
+        --color-azul: #5585FF;
+
+        --tipografia-principal: "Space Grotesk", sans-serif;
+        --tipografia-principal-light: 300;
+        --tipografia-principal-size: 1.1rem;
+        --tipografia-titulos-movil: 3.2rem;
+        --tipografia-titulos-size: 5rem;
+        --tipografia-titulos-bold: 600;
+
+        --medida-cabecera: 6rem;
+
+}
+*{
+    margin:0;
+    padding:0;
+    border: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a{
+    display: block;
+    color:inherit;
+    text-decoration: none;
+}
+p a{
+    display: inline;
+}
+h1 , h2 , h3 , h4 , h5 , h6 , strong , em , mark, pre, code{
+    font:inherit;
+}
+mark{
+    background-color:transparent;
+}
+picture , img, video , iframe {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: initial;
+}
+svg{
+    display: block;
+    width: initial;
+    height: initial;
+    fill: currentColor;
+}
+
+
+form , input , select , option , textarea , label , fieldset , legend , button{
+    display: block;
+    font:inherit;
+    background-color: initial;
+}
+fieldset {
+    border : none ;
+}
+button , label{
+    cursor: pointer;
+}
+
+
+
+/* Cabecera */
+/* Tengo pendiente en la cabecera hacer la versión móvil */
+.Cabecera{
+    width: 100%;
+    min-height: var(--medida-cabecera);
+    background-color: var(--color-beige);
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    top: 0px;
+    z-index: 2;
+}
+
+@media(max-width:700px){
+    .Cabecera{
+        /* width: 70%; */
+        padding: 0% calc(30% / 2) ;
+}
+}
+
+.Cabecera-nav{
+    /* background-color: ghostwhite; */
+    width: 60%;
+    max-width: 1000px;
+}
+
+@media (max-width: 1000px){
+    .Cabecera-nav{
+        width: 85%;
+    }
+}
+
+.Cabecera-ul{
+    width: 100%;
+    margin:auto;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Cabecera-li{
+    font-weight: var(--tipografia-principal-light);
+    font-size: var(--tipografia-principal-size);
+}
+
+.Cabecera-li:hover{
+    color: var(--color-azul);
+    text-decoration: underline;
+}
+@media(max-width:700px){
+    .Cabecera-a--trabajos, .Cabecera-a--servicios, .Cabecera-a--sobremi, .Cabecera-a--contacto{
+        display:none;
+    }
+}
+.Cabecera-button{
+    width: 30%;
+    min-height: 2rem;
+    background-color: var(--color-azul);
+
+    font-weight: var(--tipografia-principal-light);
+    font-size: var(--tipografia-principal-size);
+    color: var(--color-beige);
+
+    display:none;
+}
+
+.Cabecera-button:hover{
+    text-decoration: underline ;
+}
+@media(max-width:700px){
+    .Cabecera-button{
+        display:flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+
+        position:relative;
+        z-index: 1;
+    }
+}
+
+.Cabecera-menu{
+    display:none;
+}
+
+.Cabecera-cerrar{
+    display:none;
+}
+
+.Cabecera-menu.isVisible,
+.Cabecera-cerrar.isVisible{
+    display: block;
+}
+
+.Desplegable{
+    width: 100%;
+    min-height: calc( 100vh - var(--medida-cabecera));
+    margin: auto;
+    background-color: var(--color-azul);
+
+    position: fixed;
+    top: var(--medida-cabecera);
+    left: 0;
+
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+    pointer-events: none;
+    transform-origin: top center;
+    transform: scaleY(0);
+    transition: all .5s ease;
+
+}
+
+.Desplegable.isVisible{
+    opacity: 1;
+    pointer-events: auto;
+    transform: scaleY(1);
+
+}
+
+.Desplegable-nav
+.Desplegable-ul{
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+
+
+
+}
+.Desplegable-li{
+    font-size: 2.5rem;
+}
+
+.Desplegable-a:hover{
+    color:var(--color-beige)
+}
+
+.Desplegable-a:active{
+    color: var(--color-beige);
+}
+
+/* Footer */
+
+
+/* Menu-trabajos */
+.Menu{
+    /* background-color: aqua; */
+    width: 14%;
+    margin: var(--medida-cabecera) 0rem 0rem 4rem;
+    padding: 1rem;
+
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: start;
+    gap: 1rem;
+
+    position: sticky;
+    top: var(--medida-cabecera);
+
+}
+
+.Menu-link{
+    font-weight: var(--tipografia-principal-light);
+    font-size: var(--tipografia-principal-size);
+    
+}
+
+
+/* Para los h1 */
+
+.Titulo{
+    width: 50%;
+    margin: calc(var(--medida-cabecera) + 1rem) auto 2rem;
+    
+
+    text-align: center;
+
+    font-weight: 700;
+}
+
+@media(max-width:700px){
+    .Titulo{
+        width: 100%;
+    }
+}

@@ -1,0 +1,229 @@
+:root{
+       scroll-behavior: smooth;
+        font-size:100%;
+        background-color: var(--color-beige);
+
+
+        --tipografia-principal: "Space Grotesk", sans-serif;
+        --tipografia-principal-regular: 400;
+        --tipografia-principal-size: 1.1rem;
+        --tipografia-titulos-size: 5rem;
+        --tipografia-titulos-bold: 600;
+
+}
+*{
+    margin:0;
+    padding:0;
+    border: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a{
+    display: block;
+    color:inherit;
+    text-decoration: none;
+}
+p a{
+    display: inline;
+}
+h1 , h2 , h3 , h4 , h5 , h6 , strong , em , mark, pre, code{
+    font:inherit;
+}
+mark{
+    background-color:transparent;
+}
+picture , img, video , iframe {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: initial;
+}
+svg{
+    display: block;
+    width: initial;
+    height: initial;
+    fill: currentColor;
+}
+
+
+form , input , select , option , textarea , label , fieldset , legend , button{
+    display: block;
+    font:inherit;
+    background-color: initial;
+}
+fieldset {
+    border : none ;
+}
+button , label{
+    cursor: pointer;
+}
+
+/* Esto me lo ha respondido la IA*/
+.Cabecera-a--inicio::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color: var(--color-azul);
+  display: inline-block;
+  border-radius: 50%;
+  margin-right: .4rem;
+}
+
+.Titulo{
+    position: sticky;
+    top: calc(var(--medida-cabecera) + 1rem);
+}
+
+.Portada{
+    width: 100%;
+    min-height: calc( 100vh - var(--medida-cabecera));
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content: center;
+
+    /* margin: 0rem auto 6rem; */
+
+    position: sticky;
+    top: 10.3rem; 
+    /* Numero magico  */
+
+}
+
+.Portada-wrapper{
+    width: 60%;
+    max-width: 1100px;
+    margin:0rem auto;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+@media(max-width: 1000px){
+    .Portada-wrapper{
+        width: 80%;
+    }
+}
+
+@media(max-width: 600px){
+    .Portada-wrapper{
+        display: grid;
+        grid-template-columns: repeat( 2 , 1fr);
+    }
+}
+
+.Portada-objeto{
+    width: 20%;
+    height: 300px;
+    background-color: greenyellow;
+
+    position: relative;
+}
+
+.Portada-objeto--taza{
+    transform: translateX(0%) translateY(-30%);
+}
+.Portada-img {
+    width: 100%;
+    height: 300px;
+    background-color: #5585FF;
+}
+
+
+.Portada-aside{
+    width: 100%;
+    min-height: 100px;
+    background-color: var(--color-azul);
+    color: black;
+    border-radius: 50%;
+
+    position: absolute;
+    z-index: 1;
+    filter: blur(6px);
+
+    opacity: 0;
+    pointer-events: none;
+
+}
+.Portada-span{
+    color:black;
+    filter: blur(0px);
+}
+
+.Portada-aside--taza.isActive{
+    top: -20px;
+    right: -100px;
+
+    opacity: 1;
+}
+
+.Portada-div{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;    
+}
+
+.Portada-p{
+    width: 30%;;
+    text-align:center;
+}
+
+.Contenido{
+    background-color: var(--color-beige);
+    min-height: calc( 100vh - var(--medida-cabecera));
+    z-index: 1;
+
+    padding: 3rem 6rem;
+
+
+    position: sticky;
+    top: var(--medida-cabecera);
+}
+
+.Contenido--azul{
+    background-color: var(--color-azul);
+}
+
+.Contenido-h2{
+    width: 70%;
+    font-size: var(--tipografia-titulos-size);
+    font-weight: var(--tipografia-titulos-bold);
+
+    line-height: var(--tipografia-titulos-size)
+}
+.Contenido-h2--beis{
+    color: var(--color-beige)
+}
+
+.Contenido-p{
+    width: 70%;
+    font-size: var(--tipografia-principal-size);
+
+    margin: 3rem 0rem;
+}
+
+.Contenido-p--beis{
+    color: var(--color-beige);
+    margin: 3rem 0rem 1rem;
+}
+
+.Contenido-enlace{
+    font-size: var(--tipografia-principal-size);
+    color: var(--color-beige)
+}
+
+.Contenido-div{
+    margin: 2rem 0rem 0rem 0.5rem;
+}
+
+.Contenido-enlace:hover{
+    color: black;
+    text-decoration: underline;
+}
