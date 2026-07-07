@@ -3,12 +3,6 @@
         font-size:100%;
         background-color: var(--color-beige);
 
-        --color-beige: #FFFAEE;
-        --color-azul: #5585FF;
-
-        --tipografia-principal: "Space Grotesk", sans-serif;
-        --tipografia-principal-regular: 400;
-        --tipografia-principal-size: 1.1rem;
 
 }
 *{
@@ -74,6 +68,21 @@ main{
     margin: 10rem 0rem 0rem;
 }
 
+.Contenido-sticky{
+
+    min-height: 200vh;
+    margin:auto;
+
+    position: relative;
+}
+
+.Sticky-carrusel{
+
+    margin: auto;
+    position: sticky;
+    top: calc( var(--medida-cabecera) + 4rem);
+}
+
 .Contenido-h1{
     font-weight: 600;
     font-size: var(--tipografia-principal-size);
@@ -99,15 +108,38 @@ main{
 
 .Contenido-carrusel{
     background-color: azure;
+
+    overflow: hidden;
 }
 
 .Carrusel-wrapper{
-    width: 250%;
+    width: 200%;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 3rem;
     background-color: blue;
+
+    animation: movimientoCarrusel linear both;
+    animation-timeline: scroll(root block);
+    animation-range: entry(0%)  exit(200%);
+    transform-origin: center center;
 }
+
+   
+
+@keyframes movimientoCarrusel {
+    0%{
+        transform: translateX(0%);
+    }
+    50%{
+        transform: translateX(-50%);
+    }
+    100%{
+        transform: translateX(-50%);
+    }
+    
+}
+
 
 .Carrusel-columna{
     background-color: aqua;
