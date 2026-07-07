@@ -4,12 +4,6 @@
         background-color: var(--color-beige);
 
 
-        --tipografia-principal: "Space Grotesk", sans-serif;
-        --tipografia-principal-regular: 400;
-        --tipografia-principal-size: 1.1rem;
-        --tipografia-titulos-size: 5rem;
-        --tipografia-titulos-bold: 600;
-
 }
 *{
     margin:0;
@@ -119,33 +113,38 @@ button , label{
 }
 
 .Portada-objeto{
-    width: 20%;
-    height: 300px;
-    background-color: greenyellow;
+    width: 60%;
+    /* height: 300px; */
 
     position: relative;
 }
 
 .Portada-objeto--taza{
-    transform: translateX(0%) translateY(-30%);
+    transform: translateX(-20%) translateY(-30%) rotate(-18deg);
 }
 .Portada-img {
     width: 100%;
-    height: 300px;
-    background-color: #5585FF;
+    /* height: 300px; */
+    /* background-color: #5585FF; */
+
 }
 
 
 .Portada-aside{
-    width: 100%;
+    width: 70%;
+    min-height: 70%;
+    /* width: 100%;
     min-height: 100px;
     background-color: var(--color-azul);
     color: black;
-    border-radius: 50%;
+    border-radius: 50%; */
 
     position: absolute;
+    top: 15%;
+    right: 15%;
+    
     z-index: 1;
-    filter: blur(6px);
+
 
     opacity: 0;
     pointer-events: none;
@@ -153,17 +152,15 @@ button , label{
 }
 .Portada-span{
     color:black;
-    filter: blur(0px);
 }
 
 .Portada-aside--taza.isActive{
-    top: -20px;
-    right: -100px;
+    background-color: greenyellow;
 
     opacity: 1;
 }
 
-.Portada-div{
+.Portada-presentacion{
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -174,6 +171,9 @@ button , label{
     width: 30%;;
     text-align:center;
 }
+
+
+/* Hasta aqui la primera pantalla */
 
 .Contenido{
     background-color: var(--color-beige);

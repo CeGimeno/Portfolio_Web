@@ -67,8 +67,7 @@ button , label{
 .Servicios{
     width: 80%;
     max-width: 2000px;
-    min-height: 30vh;
-    margin:2rem auto;
+    margin:0rem auto;
 
     /* background-color: aquamarine; */
 
@@ -76,6 +75,8 @@ button , label{
     flex-flow: row nowrap;
     justify-content: start;
     align-items: center;
+
+    position:relative;
 }
 
 @media(max-width: 800px){
@@ -93,7 +94,6 @@ button , label{
 
 .Servicios-columna{
     display: flex;
-    position:relative;
 
 }
 
@@ -106,8 +106,6 @@ button , label{
     align-items: start; */
 
     position: relative;
-
-    z-index: 1;
 }
 
 @media(max-width:800px){
@@ -117,25 +115,39 @@ button , label{
 }
 
 .Servicios-h2{
-    margin: 0rem 0rem 1rem;
+    margin: 0rem 0rem 0.4rem;
 
     font-family: var(--tipografia-principal);
     font-weight: var(--tipografia-principal-regular);
-    font-size: var(--tipografia-titulos-size);
-    line-height: var(--tipografia-titulos-size);
+    font-size: 3.5rem;
+    line-height: 3.5rem;
 
     text-align: left;
+    position: relative;
+
+
 }
 
 .Servicios-h2:hover{
-    color: var(--color-azul)
+    color: var(--color-azul);
+}
+.Servicios-h2:hover::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color: var(--color-azul);
+  display: inline-block;
+  margin: auto;
+  border-radius: 50%;
+  margin-right: .6rem;
+
 }
 
 @media (max-width: 800px){
     .Servicios-h2{
         margin: 1rem 0rem 0.2rem;
-        font-size: var(--tipografia-titulos-movil);
-        line-height: var(--tipografia-titulos-movil);
+        font-size: 2rem;
+        line-height: 2rem;
 
         /* text-align: center; */
     }
@@ -147,6 +159,8 @@ button , label{
     font-size: var(--tipografia-principal-size);
 
     text-align: left;
+
+    margin: 0rem 0rem 1.5rem;
 }
 
 @media (max-width: 800px){
@@ -157,7 +171,7 @@ button , label{
 
 
 .Servicios-columna--img{
-    width: 30%;
+    width: 20%;
     max-width: 300px;
     /* min-height: 50vh; */
     flex-flow: row nowrap;
@@ -165,6 +179,7 @@ button , label{
     align-items: center;
 
     position:absolute;
+    top: -40%;
     right: 15%;
 
     opacity: 0;
@@ -186,6 +201,7 @@ button , label{
     }
 }
 .Servicios-img{
+
 
     
 }
