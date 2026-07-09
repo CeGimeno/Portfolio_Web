@@ -90,6 +90,7 @@ button , label{
 
 
 .Destacado{
+
     width: 100%;
     position: sticky;
 
@@ -98,6 +99,26 @@ button , label{
     line-height: 3.5rem;
     padding: 0rem 6rem;
     margin: 0rem 0rem 4rem;
+}
+
+@media(max-width: 1000px){
+    .Destacado{
+        font-size: 3rem;
+        line-height: 3rem;
+        text-align: center;
+
+        padding: 0rem 2rem;
+    }
+}
+
+@media(max-width: 700px){
+    .Destacado{
+        font-size: 2.4rem;
+        line-height: 2rem;
+        text-align: center;
+
+        padding: 0rem 2rem;
+    }
 }
 
 .Objeto{
@@ -113,30 +134,80 @@ button , label{
 
 }
 
+
+@media(max-width: 1000px){
+    .Objeto{
+        top: 10rem;
+    }
+}
+
 .Objeto-taza{
     width: 20%;
+    height: fit-content;
     position: relative;
 
+    animation: giroTaza linear both;
+    animation-timeline: scroll(root block);
+    animation-range: entry(40%)  exit(100%);
+    transform-origin: top right;
+
+}
+
+@keyframes giroTaza {
+    from{
+        transform: rotate(-18deg) translateX(-20%) translateY(-50%);
+    }
+    to{
+        transform: rotate(100deg) translateX(-20%) translateY(-50%);
+    }
+    
+}
+
+@media(max-width: 1000px){
+    .Objeto-taza{
+        width: 30%;
+    }
+}
+.Objeto-ordenador{
+    width: 30%;
+    height: fit-content;
+    position: relative;
+
+    animation: giroOrdenador linear both;
+    animation-timeline: scroll(root block);
+    animation-range: entry(0%)  exit(100%);
+    transform-origin: top right;
+
+}
+
+@keyframes giroOrdenador {
+    from{
+        transform: rotate(-10deg);
+    }
+    to{
+        transform: rotate(90deg);
+    }
+    
+}
+
+@media(max-width: 700px){
+    .Objeto-ordenador{
+        width: 50%;
+    }
 }
 
 .Objeto-img{
     width: 90%;
 }
-.Portada-objeto--taza{
-    transform: translateX(-20%) translateY(-30%) rotate(-18deg);
-}
 
 
-
-
-.Objeto-aside{
+.Objeto-taza .Objeto-aside{
     width: 100%;
-    min-height: 100%;
-
+    min-height: 50%;
 
     position: absolute;
-    top: 15%;
-    right: 15%;
+    bottom: 0rem;
+    right: 7rem;
     
     z-index: 1;
 
@@ -145,11 +216,33 @@ button , label{
     pointer-events: none;
 
 }
-.Portada-span{
+
+.Objeto-ordenador .Objeto-aside{
+    width: 60%;
+    min-height: 50%;
+
+    position: absolute;
+    top: 25%;
+    left: -4rem;
+    
+    z-index: 1;
+
+
+    opacity: 0;
+    pointer-events: none;
+
+}
+.Objeto-span{
     color:black;
 }
 
-.Portada-aside--taza.isActive{
+.Objeto-aside--taza.isActive{
+    background-color: greenyellow;
+
+    opacity: 1;
+}
+
+.Objeto-aside--ordenador.isActive{
     background-color: greenyellow;
 
     opacity: 1;
@@ -182,6 +275,13 @@ button , label{
     top: var(--medida-cabecera);
 }
 
+@media(max-width: 700px){
+    .Contenido{
+        padding:0rem;
+        margin: auto;
+    }
+}
+
 .Contenido--azul{
     background-color: var(--color-azul);
 }
@@ -193,6 +293,22 @@ button , label{
 
     line-height: var(--tipografia-titulos-size)
 }
+
+@media(max-width: 1000px){
+    .Contenido-h2{
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+}
+
+@media(max-width: 700px){
+    .Contenido-h2{
+        font-size: var(--tipografia-titulos-movil);
+        line-height: var(--tipografia-titulos-movil);
+        text-align: center;
+    }
+}
+
 .Contenido-h2--beis{
     color: var(--color-beige)
 }

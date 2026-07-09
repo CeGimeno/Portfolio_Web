@@ -3,11 +3,11 @@
 // Cuando paso el ratón por portada-img--taza, se le añade "ISActive" a portada-aside--taza
 // Creo que esto que he hecho sería más fácil con dos querySelectorAll y hacer que cuando paso el ratón por una imagen el texto del mismo índice se active
 
-const imagenTaza = document.querySelector(`.Portada-img--taza`)
-const textoTaza = document.querySelector(`.Portada-aside--taza`)
+const imagenTaza = document.querySelector(`.Objeto-img--taza`)
+const textoTaza = document.querySelector(`.Objeto-aside--taza`)
 
-const imagenOrdenador = document.querySelector(`.Portada-img--ordenador`)
-const textoOrdenador = document.querySelector(`.Portada-aside--ordenador`)
+const imagenOrdenador = document.querySelector(`.Objeto-img--ordenador`)
+const textoOrdenador = document.querySelector(`.Objeto-aside--ordenador`)
 
 const imagenBoli = document.querySelector(`.Portada-img--boli`)
 const textoBoli = document.querySelector(`.Portada-aside--boli`)

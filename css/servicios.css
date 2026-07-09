@@ -64,7 +64,23 @@ button , label{
 
 }
 
+.Wrapper{
+    width: 100%;
+    max-width: 2000px;
+    min-height: 75vh;
+    margin: 0rem 0rem 1rem;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    position: sticky;
+    top: calc(var(--medida-cabecera)*2);
+}
+
 .Servicios{
+
     width: 80%;
     max-width: 2000px;
     margin:0rem auto;
@@ -206,3 +222,25 @@ button , label{
     
 }
 
+.Contenido{
+    width: 100%;
+    background-color: var(--color-azul);
+    min-height: calc( 100vh - var(--medida-cabecera));
+    
+
+    padding: 3rem 10% 0rem;
+
+
+    position: relative;
+    z-index: 1;
+    
+}
+
+.Contenido-h2{
+    width: 70%;
+    font-size: var(--tipografia-titulos-size);
+    font-weight: var(--tipografia-titulos-bold);
+    color: var(--color-beige);
+
+    line-height: var(--tipografia-titulos-size)
+}
