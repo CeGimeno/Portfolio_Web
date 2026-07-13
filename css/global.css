@@ -227,16 +227,15 @@ button , label{
 
 /* Menu-trabajos */
 .Menu{
-    /* background-color: aqua; */
-    width: 14%;
+    width: 100%;
     margin: var(--medida-cabecera) 0rem 0rem 4rem;
-    padding: 1rem;
+    padding: 0.5rem;
 
     display:flex;
     flex-flow: column nowrap;
     justify-content: start;
     align-items: start;
-    gap: 1rem;
+    gap: 0.5rem;
 
     position: sticky;
     top: var(--medida-cabecera);

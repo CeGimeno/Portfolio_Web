@@ -9,11 +9,6 @@ const textoTaza = document.querySelector(`.Objeto-aside--taza`)
 const imagenOrdenador = document.querySelector(`.Objeto-img--ordenador`)
 const textoOrdenador = document.querySelector(`.Objeto-aside--ordenador`)
 
-const imagenBoli = document.querySelector(`.Portada-img--boli`)
-const textoBoli = document.querySelector(`.Portada-aside--boli`)
-
-const imagenRaton = document.querySelector(`.Portada-img--raton`)
-const textoRaton = document.querySelector(`.Portada-aside--raton`)
 
 
 

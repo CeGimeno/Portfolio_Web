@@ -64,10 +64,10 @@ cabeceraCerrar.addEventListener(`click`, () => {
 class Menu extends HTMLElement{
     connectedCallback(){
         this.innerHTML =` <div class="Menu">
-        <div class="Menu-link">Trabajo1</div>
-        <div class="Menu-link">Trabajo2</div>
-        <div class="Menu-link">Trabajo3</div>
-        <div class="Menu-link">Trabajo4</div>
+        <div class="Menu-link"><a href="la-cirera.html" class="Menu-a"></a>La Cirera</div>
+        <div class="Menu-link"><a href="esporas-en-la-lengua.html" class="Menu-a">esporas en la lengua</a></div>
+        <div class="Menu-link"><a href="sons-al-botanic.html" class="Menu-a">Sons al Botànic</a></div>
+        <div class="Menu-link"><a href="esporas-en-la-lengua.html" class="Menu-a">esporas en la lengua</a></div>
         <div class="Menu-link">Trabajo5</div>
     </div>`
     }
