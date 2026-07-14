@@ -1,3 +1,9 @@
+<!-- DESCRIPCIÓN:página individual del proyecto La Cirera
+Estructura general:
+ Hay dos columnas que dividen toda la página: a la izquierda un menú para navegar entre los distintos trabajos. A la derecha, el contemido del trabajo de La Cirera -->
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,10 +20,15 @@
 </head>
 
 <body>
+    <!-- Cabecera añadida desde Javascript -->
     <element-cabecera></element-cabecera>
     <main>
+        <!-- Menú lateral de trabajos añadido desde Javascript -->
         <element-menu></element-menu>
+        <!-- La columna Contenido es la de la derecha. Es la que ocupa gran parte e la pantalla. (En versión móvil ocupa toda la pantalla).
+        Estructura: Sucesión de imágenes  y textos que describen el proyecto. -->
         <div class="Contenido">
+            <!-- Imagen y texto de presentación del proyecto -->
             <h1 class="Contenido-h1"> proyecto- La Cirera </h1>
             <h2 class="Contenido-h2">Identidad visual</h2>
             <picture>
@@ -30,6 +41,9 @@
             <p class="Portada-p">El proyecto consiste en crear una identidad gráfica para este nuevo espacio. El
                 trabajo se centra en desarrollar un logotipo,
                 una paleta de colores definida y elementos gráficos reconocibles.</p>
+
+            <!-- Segundo bloque de información del proyecto.
+                ESTRUCTURA ESCRITORIO: imagen a la izquierda, texto a la derecha -->
             <div class="Contenido-seccion">
                 <div class="Contenido-wrapper">
                     <div class="Contenido-columna">
@@ -37,19 +51,22 @@
                         <img src="assets/La-Cirera-2.webp" alt="Imagen La Cirera" class="Contenido-img" loading="lazy">
                         </picture>
                     </div>
-                    <div class="Contenido-columna Contenido-columna--texto">
+                    <section class="Contenido-columna Contenido-columna--texto">
                         <h3 class="Contenido-h3">La idea</h3>
                         <p class="Contenido-p Contenido-p--columna">«La Cirera» significa «cereza» en valenciano. La
                             identidad gráfica se
                             diseñó para complementar el nombre del proyecto. La imagen de la cereza ha influido
                             notablemente en la paleta de colores y también confiere un doble sentido al círculo rojo:
                             representa un punto de encuentro, pero a la vez nos recuerda a la fruta.</p>
-                    </div>
+                    </section>
                 </div>
             </div>
+
+            <!-- Tercer bloque de contenido. Solo tiene la imagen del logo. -->
             <picture class="Contenido-logo">
                 <img src="assets/La-Cirera-3.webp" alt="Imagen La Cirera" loading="lazy">
             </picture>
+            <!-- Cuarto bloque del contenido. Dos imágenes, fotografías del espacio -->
             <div class="Contenido-seccion">
                 <div class="Contenido-wrapper">
                     <div class="Contenido-columna">
@@ -66,9 +83,11 @@
                 </div>
             </div>
 
+            <!-- Quinto bloque del contenido.  -->
             <p class="Contenido-p">Al igual que ocurre con el círculo rojo, las letras desordenadas y en
                 movimiento pasan a formar parte de la identidad más allá del logotipo.</p>
 
+            <!-- Sexto bloque del contenido. Imágene stexto -->
             <div class="Contenido-wrapper Contenido-wrapper--letras">
                 <div class="Contenido-columna">
                     <picture>
@@ -81,6 +100,8 @@
                     </picture>
                 </div>
             </div>
+
+            <!-- Séptimo bloque del contenido. Dos imágenes, fotografías del espacio  -->
             <div class="Contenido-seccion">
                 <div class="Contenido-wrapper">
                     <div class="Contenido-columna">

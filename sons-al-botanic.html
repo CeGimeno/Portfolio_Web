@@ -1,5 +1,10 @@
+<!-- DESCRIPCIÓN:página individual del proyecto La Cirera
+Estructura general:
+ Hay dos columnas que dividen toda la página: 
+ a la izquierda un menú para navegar entre los distintos trabajos. A la derecha, el contemido del trabajo de Sons al Botanic-->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,41 +19,98 @@
 </head>
 
 <body>
+    <!-- Cabecera añadida desde Javascript -->
     <element-cabecera></element-cabecera>
     <main>
-    <element-menu></element-menu> 
-    <div class="Contenido">
-        <div class="Contenido-sticky">
-        <div class="Sticky-carrusel">
-        <h1 class="Contenido-h1"> carmen gimeno - diseño gráfico </h1>
-        <h2 class="Contenido-h2"> Sons al Botànic</h2>
-        <p class="Contenido-p">Sons al Botànic es un ciclo musical que se celebra anualmente en el Jardí Botànic de València.  Para el año 2024 diseño los carteles que anuncian el ciclo y los conciertos individuales. <br> Son diseños que están pensado principalmente para su difusión en redes sociales..</p>
-         <div class="Contenido-carrusel">
-            <div class="Carrusel-wrapper">
-                <div class="Carrusel-columna"></div>
-                <div class="Carrusel-columna"></div>
-                <div class="Carrusel-columna"></div>
-                <div class="Carrusel-columna"></div>
-            </div>
-         </div>
-    </div>
-    </div>
+        <!-- Menú lateral de trabajos añadido desde Javascript -->
+        <element-menu></element-menu>
+        <div class="Contenido">
+            <!-- Primera pantalla de la página.
+            ESTRUCTURA:
+            - titulo
+            -carrusel -->
+            <div class="Contenido-sticky">
+                <div class="Sticky-carrusel">
+                    <h1 class="Contenido-h1"> Proyecto - Sons al Botànic 2024 </h1>
+                    <h2 class="Contenido-h2"> Identidad visual</h2>
 
-         <article class="Contenido-descripcion">
-        <div class="Descripcion-div">
-            <svg class="Descripcion-svg"></svg>
-            <h3 class="Descripcion-h3">Mucho color y una estética marcada</h2>
-            <p class="Descripcion-p">Seis carteles individuales para los conciertos de Sons al Botànic 2024. El formato principal es cuadrado, adaptado a las dimensiones de Instagram de aquel momento.
-En cuanto al cartel principal (imagen de la derecha), la versión principal fue la adaptada para impresión.
-</p>
-            <p class="Descripcion-p">Para diferenciarlo de los carteles individuales, y aunque también emplea dos colores, se optó por un fondo de tono muy oscuro. La composición hace referencia al escenario de Sons al Botànic: las luces superiores frente al fondo oscuro de la noche en el jardín.</p>
-            <svg class="Descripcion-svg"></svg>
+                    <!-- Carrusel de 4 imágenes -->
+                    <div class="Contenido-carrusel">
+                        <div class="Carrusel-wrapper">
+                            <div class="Carrusel-columna">
+                                <picture>
+                                    <img src="assets/sons-al-botanic-1.webp" alt="Cartel Sons al Botanic"
+                                        class="Carrusel-img">
+                                </picture>
+                            </div>
+                            <div class="Carrusel-columna">
+                                <picture>
+                                    <img src="assets/sons-al-botanic-2.webp" alt="Cartel Sons al Botanic"
+                                        class="Carrusel-img">
+                                </picture>
+                            </div>
+                            <div class="Carrusel-columna">
+                                <picture>
+                                    <img src="assets/sons-al-botanic-3.webp" alt="Cartel Sons al Botanic"
+                                        class="Carrusel-img">
+                                </picture>
+                            </div>
+                            <div class="Carrusel-columna">
+                                <picture>
+                                    <img src="assets/sons-al-botanic-4.webp" alt="Cartel Sons al Botanic"
+                                        class="Carrusel-img">
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!-- Primer bloque de contenido: texto descriptivo -->
+            <p class="Contenido-p">Sons al Botànic es un ciclo musical que se celebra anualmente en el Jardí
+                Botànic de València. Para el año 2024 diseño los carteles que anuncian el ciclo y los conciertos
+                individuales. <br> Son diseños que están pensado principalmente para su difusión en redes
+                sociales..</p>
+<!-- Segundo bloque: dos columnas, a la izquierda texto a la derecha imagen -->
+            <article class="Contenido-descripcion">
+                <div class="Descripcion-div">
+                    <h3 class="Descripcion-h3">Mucho color y una estética floral</h2>
+                        <p class="Descripcion-p">Seis carteles individuales para los conciertos de Sons al Botànic 2024.
+                            El formato principal es cuadrado, adaptado a las dimensiones de Instagram de aquel momento.
+                            En cuanto al cartel principal (imagen de la derecha), la versión principal fue la adaptada
+                            para impresión.
+                        </p>
+                        <p class="Descripcion-p">Para diferenciarlo de los carteles individuales, y aunque también
+                            emplea dos colores, se optó por un fondo de tono muy oscuro. La composición hace referencia
+                            al escenario de Sons al Botànic: las luces superiores frente al fondo oscuro de la noche en
+                            el jardín.</p>
+                </div>
+                <div class="Descripcion-div">
+                    <picture>
+                    <img src="assets/sons-al-botanic-5.webp" alt="Cartel general sons al botanic" class="Descripcion-img">
+                    </picture>
+                </div>
+            </article>
+
+            <!-- Tercer bloque: dos imágenes -->
+             <div class="Contenido-columnas">
+                <picture class="Columna-dibujo">
+                    <img src="assets/sons-al-botanic-6.webp" alt="Imagen Sons al Botanic" loading="lazy">
+                </picture>
+                <picture class="Columna-cartel">
+                    <img src="assets/sons-al-botanic-7.webp" alt="Imagen SOns al Boatnic" loading="lazy">
+                </picture>
+             </div>
+            <!-- Cuarto bloque: dos imagenes -->
+             <div class="Contenido-columnas Contenido-columnas--reverse">
+                  <picture class="Columna-cartel">
+                    <img src="assets/sons-al-botanic-8.webp" alt="Imagen Sons al Botanic" loading="lazy">
+                </picture>
+                <picture class="Columna-dibujo">
+                    <img src="assets/sons-al-botanic-9.webp" alt="Imagen Sons al Boatnic" loading="lazy">
+                </picture>
+             </div>
+             </div>
         </div>
-        <div class="Descripcion-div">
-            <img src="" alt="" class="Descripcion-img">
-        </div>
-    </article>
-    </div>
 
 
     </main>

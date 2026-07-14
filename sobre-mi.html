@@ -1,5 +1,12 @@
+<!-- DESCRIPCIÓN: página de "sobre mi""
+Estructura general:
+- Dos columnas:
+    - a la izquiera, imagen
+    - a la dercha, bloque de texto-->
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,10 +18,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
 </head>
+
 <body>
+    <!-- Cabecera añadida desde Javascript -->
     <element-cabecera></element-cabecera>
-    <h1 class="Titulo">carmen gimeno - diseño gráfico</h1>
+    <h1 class="Titulo">carmen gimeno</h1>
     <main>
+        <!-- Columna de la imagen -->
         <div class="Wrapper">
             <div class="Columna Columna--izquierda">
                 <img src="imgs/foto pasaporte 2.png" alt="" class="Columna-img" id="imagenSobremi">
@@ -22,11 +32,13 @@
                     <p class="Popup-texto">Esta soy yo</p>
                 </div>
             </div>
+            <!-- Columna texto. Presentación y datos  -->
             <div class="Columna Columna--derecha">
                 <p class="Columna-texto">Cegimeno es una sola persona, <br> Carmen Gimeno Casas.
-Trabajo de diseño web, marca… esto que nos encanta decir a las diseñadoras de «multidisciplinar».
-Durante el proceso de trabajo, siempre se busca que sea orientado de manera que se logre la mejor comunicación posible con el cliente, llegando a acuerdos 
-y puntos comunes donde el diseño pueda verdaderamente ser útil y una herramienta.</p>
+                    Trabajo de diseño web, marca… esto que nos encanta decir a las diseñadoras de «multidisciplinar».
+                    Durante el proceso de trabajo, siempre se busca que sea orientado de manera que se logre la mejor
+                    comunicación posible con el cliente, llegando a acuerdos
+                    y puntos comunes donde el diseño pueda verdaderamente ser útil y una herramienta.</p>
                 <section class="Columna-section">
                     <h2 class="Columna-h2">Experiencia laboral</h2>
                     <p class="Columna-p"></p>
@@ -39,6 +51,7 @@ y puntos comunes donde el diseño pueda verdaderamente ser útil y una herramien
             </div>
         </div>
     </main>
-    
+
 </body>
+
 </html>

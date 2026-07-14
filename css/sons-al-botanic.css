@@ -110,18 +110,19 @@ main{
     background-color: azure;
 
     overflow: hidden;
+    max-height: 600px;
 }
 
 .Carrusel-wrapper{
-    width: 200%;
+    width: 180%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 3rem;
-    background-color: blue;
+
 
     animation: movimientoCarrusel linear both;
     animation-timeline: scroll(root block);
-    animation-range: entry(0%)  exit(200%);
+    animation-range: entry(0%)  exit(180%);
     transform-origin: center center;
 }
 
@@ -132,23 +133,54 @@ main{
         transform: translateX(0%);
     }
     50%{
-        transform: translateX(-50%);
+        transform: translateX(-45%);
     }
     100%{
-        transform: translateX(-50%);
+        transform: translateX(-45%);
     }
     
 }
 
 
-.Carrusel-columna{
-    background-color: aqua;
-    height: 300px;
+.Carrusel-img{
+    height: 80%;
 }
-
 .Contenido-descripcion{
     width: 70%;
 
     display: grid;
     grid-template-columns: repeat( 2 , 1fr);
+}
+
+.Contenido-columnas{
+    width: 100%;
+    margin: 4rem 0rem;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: end;
+    align-items: start;
+
+    position:relative;
+}
+
+.Contenido-columnas--reverse{
+    justify-content: start;
+}
+
+.Columna-dibujo{
+    width: 70%;
+    position:absolute;
+    z-index: 1;
+
+    left:0;
+    top:0;
+}
+
+.Contenido-dibujo .Contenido-columnas--reverse{
+    left:auto;
+    right: 0;
+}
+.Columna-cartel{
+    width: 40%;
 }

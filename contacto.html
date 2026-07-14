@@ -1,5 +1,11 @@
+<!-- DESCRIPCIÓN: página de contacto
+Estructura general:
+- Sin formulario, el contacto se hace mediante enlaces externos
+- Primero unas letras grandes y luego los enlaces -->
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,28 +17,33 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
 </head>
+
 <body>
+    <!-- Cabecera añadida desde Javascript -->
     <element-cabecera></element-cabecera>
-     <h1 class="Titulo">carmen gimeno - diseño gráfico</h1>
+    <h1 class="Titulo">carmen gimeno - contacto</h1>
     <main>
-        <div class="Columna">
-            <img src="imgs/Rectangle 159.png" alt="" class="Columna-img">
-        </div>
         <div class="Contenido">
+            <!-- Cada Contenido-div es un bloque de texto. Texto decorativo. -->
             <div class="Contenido-div">
                 <span class="Contenido-texto Contenido-texto--1">¿Alguna idea?</span>
             </div>
-                <div class="Contenido-div">
+            <div class="Contenido-div">
                 <span class="Contenido-texto Contenido-texto--2">¿Algo que decirme?</span>
             </div>
-                <div class="Contenido-div">
-            <span class="Contenido-texto Contenido-texto--3">Estaré encantada de leerte.</span>
+            <div class="Contenido-div">
+                <span class="Contenido-texto Contenido-texto--3">Estaré encantada de leerte.</span>
             </div>
-            <h2 class="Contenido-enlace"><a href="mailto:cegimeno@gmail.com" > Mi e-mail es holacegimeno@gmail.com</a></h2>
-            <span class="Contenido-enlace"><a href="https://www.instagram.com/cegimeno/" target="_blank"> Y también puedes seguirme en Instagram</a></span>
+
+            <!-- Los dos enlaces de contacto: el email y el Instagram -->
+            <h2 class="Contenido-enlace"><a href="mailto:cegimeno@gmail.com"> Mi e-mail es holacegimeno@gmail.com</a>
+            </h2>
+            <span class="Contenido-enlace"><a href="https://www.instagram.com/cegimeno/" target="_blank"> Y también
+                    puedes seguirme en Instagram</a></span>
         </div>
 
     </main>
-    
+
 </body>
+
 </html>

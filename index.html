@@ -1,5 +1,12 @@
+<!-- DESCRIPCIÓN: página de inicio del sitio web.
+Estructura general:
+- Bloque Portada
+- Primera pantalla de contenido
+- Sengunda panatalla de contacto -->
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,44 +19,62 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
 </head>
+
 <body>
+    <!-- Cabecera añadida desde Javascript -->
     <element-cabecera></element-cabecera>
-            <h1 class="Titulo">carmen gimeno - diseño gráfico</h1>
+    <h1 class="Titulo">carmen gimeno - diseño gráfico</h1>
     <main>
+        <!-- La portada es una primera pantalla de letras grandes -->
         <div class="Portada">
             <div class="Portada-wrapper">
-                <p class="Destacado">El diseño gráfico es una herramienta de comunicación, con una forma de hacer muy próxima a la artesanía. Lo importante es trabajar con cariño con las herramientas; cuidar el material recibido;  y mantener la pasión por generar algo nuevo desde lo que ya existe</p>
+                <p class="Destacado">El diseño gráfico es una herramienta de comunicación, con una forma de hacer muy
+                    próxima a la artesanía. Lo importante es trabajar con cariño con las herramientas; cuidar el
+                    material recibido; y mantener la pasión por generar algo nuevo desde lo que ya existe</p>
             </div>
+
+            <!-- Objetos son elementos interactivos con Javascript. Se superponen al texto de portada.  -->
             <div class="Objeto">
                 <div class="Objeto-taza">
-                        <img class="Objeto-img Objeto-img--taza" src="imgs/taza.png">
-                        <aside class="Objeto-aside Objeto-aside--taza"><span class="Objeto-span">Tomémonos un café y hablemos de negocios.</span></aside>
+                    <img class="Objeto-img Objeto-img--taza" src="imgs/taza.png">
+                    <aside class="Objeto-aside Objeto-aside--taza"><span class="Objeto-span">Tomémonos un café y
+                            hablemos de negocios.</span></aside>
                 </div>
                 <div class="Objeto-ordenador">
-                        <img class="Objeto-img Objeto-img--ordenador" src="imgs/ordenador.png">
-                        <aside class="Objeto-aside Objeto-aside--ordenador"><span class="Objeto-span">Teletrabjando.</span></aside>
+                    <img class="Objeto-img Objeto-img--ordenador" src="imgs/ordenador.png">
+                    <aside class="Objeto-aside Objeto-aside--ordenador"><span class="Objeto-span">Teletrabjando.</span>
+                    </aside>
                 </div>
             </div>
         </div>
-        
-        <!-- <div class="Presentacion">
-                <p class="Presentacion-p">Carmen Gimeno, diseñadora gráfica, Valencia <br> CEGimeno es el nombre del proyecto</p>
+
+        <!-- Primera pantalla de contenido -->
+        <p class="Presentacion-p">Carmen Gimeno, diseñadora gráfica, Valencia <br> CEGimeno es el nombre del proyecto
+        </p>
         </div> -->
 
         <section class="Contenido Contenido--azul">
             <h2 class="Contenido-h2 Contenido-h2--beis">Un buen diseño asegura una buena comunicación</h2>
-            <p class="Contenido-p Contenido-p--beis"> los proyectos/encargos de diseño se enfrentan entiendo el diseño gráfico como un herramienta de comunicación, con una forma de hacer muy próxima a la artesanía. Lo importante es trabajar con cariño con las herramientas, tanto digitales como analógicas; cuidar el material recibido;  y mantener la pasión por generar algo nuevo desde lo que ya existe.</p>
+            <p class="Contenido-p Contenido-p--beis"> los proyectos/encargos de diseño se enfrentan entiendo el diseño
+                gráfico como un herramienta de comunicación, con una forma de hacer muy próxima a la artesanía. Lo
+                importante es trabajar con cariño con las herramientas, tanto digitales como analógicas; cuidar el
+                material recibido; y mantener la pasión por generar algo nuevo desde lo que ya existe.</p>
         </section>
 
-        <section class= "Contenido">
+        <!-- Segunda pantalla de contenido. Objetivo: contacto -->
+        <section class="Contenido">
             <h2 class="Contenido-h2">¿Hablamos?</h2>
             <div class="Contenido-div">
-                <p class="Contenido-p">No tengas ningún problema en contactarme para presupuesto, dudas o cualquier cosa. ¡Abierta a colaboracion!</p>
-                <h3 class="Contenido-enlace"><a href="mailto:cegimeno@gmail.com" > Mi e-mail es holacegimeno@gmail.com</a></h2>
-                <span class="Contenido-enlace"><a href="mailto:cegimeno@gmail.com"> Y también puedes seguirme en Instagram</a></span>
+                <p class="Contenido-p">No tengas ningún problema en contactarme para presupuesto, dudas o cualquier
+                    cosa. ¡Abierta a colaboracion!</p>
+                <h3 class="Contenido-enlace"><a href="mailto:cegimeno@gmail.com"> Mi e-mail es
+                        holacegimeno@gmail.com</a></h2>
+                    <span class="Contenido-enlace"><a href="mailto:cegimeno@gmail.com"> Y también puedes seguirme en
+                            Instagram</a></span>
             </div>
         </section>
     </main>
-    
+
 </body>
+
 </html>
