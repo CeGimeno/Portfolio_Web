@@ -1,3 +1,9 @@
+/**\
+index.css
+- Reset
+- Cabecera
+-Main
+\**/
 :root{
        scroll-behavior: smooth;
         font-size:100%;
@@ -54,7 +60,7 @@ button , label{
     cursor: pointer;
 }
 
-/* Esto me lo ha respondido la IA*/
+/* pseudo-elemento especifico para personalizar la cabecera en cada página*/
 .Cabecera-a--inicio::before {
   content: "";
   width: 15px;
@@ -64,6 +70,11 @@ button , label{
   border-radius: 50%;
   margin-right: .4rem;
 }
+
+/*PRIMER BLOQUE:
+-Titulo
+- texto presentacion
+-Elementos objetos*/
 
 .Titulo{
     position: sticky;
@@ -78,8 +89,6 @@ button , label{
     align-content: center;
 
     position: relative;
-    /* top: 10.3rem;  */
-    /* Numero magico  */
 
 }
 
@@ -90,7 +99,6 @@ button , label{
 
 
 .Destacado{
-
     width: 100%;
     position: sticky;
 
@@ -121,6 +129,8 @@ button , label{
     }
 }
 
+/*Objetos ordenador + taza.*/
+
 .Objeto{
     width: 100%;
 
@@ -140,6 +150,8 @@ button , label{
         top: 10rem;
     }
 }
+
+/*Especificaciones objeto taza*/
 
 .Objeto-taza{
     width: 20%;
@@ -168,6 +180,9 @@ button , label{
         width: 30%;
     }
 }
+
+/*Especificaciones objeto ordenador*/
+
 .Objeto-ordenador{
     width: 30%;
     height: fit-content;
@@ -200,6 +215,7 @@ button , label{
     width: 90%;
 }
 
+/*Clases para la interacción con JavaScript*/
 
 .Objeto-taza .Objeto-aside{
     width: 100%;
@@ -248,6 +264,8 @@ button , label{
     opacity: 1;
 }
 
+/*Parrafo de la primera pantalla*/
+
 .Presentacion{
     display: flex;
     flex-flow: row nowrap;
@@ -263,6 +281,9 @@ button , label{
 
 /* Hasta aqui la primera pantalla */
 
+/*SEGUNDO Y TERCER BLOQUE:
+- titulo + texto*/
+
 .Contenido{
     background-color: var(--color-beige);
     min-height: calc( 100vh - var(--medida-cabecera));
@@ -275,6 +296,10 @@ button , label{
     top: var(--medida-cabecera);
 }
 
+.Contenido--azul{
+    background-color: var(--color-azul);
+}
+
 @media(max-width: 700px){
     .Contenido{
         padding:0rem;
@@ -282,8 +307,8 @@ button , label{
     }
 }
 
-.Contenido--azul{
-    background-color: var(--color-azul);
+.Contenido-div{
+    margin: 2rem 0rem 0rem 0.5rem;
 }
 
 .Contenido-h2{
@@ -292,6 +317,10 @@ button , label{
     font-weight: var(--tipografia-titulos-bold);
 
     line-height: var(--tipografia-titulos-size)
+}
+
+.Contenido-h2--beis{
+    color: var(--color-beige)
 }
 
 @media(max-width: 1000px){
@@ -309,9 +338,6 @@ button , label{
     }
 }
 
-.Contenido-h2--beis{
-    color: var(--color-beige)
-}
 
 .Contenido-p{
     width: 70%;
@@ -330,9 +356,6 @@ button , label{
     color: var(--color-beige)
 }
 
-.Contenido-div{
-    margin: 2rem 0rem 0rem 0.5rem;
-}
 
 .Contenido-enlace:hover{
     color: black;

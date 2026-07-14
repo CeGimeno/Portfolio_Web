@@ -1,13 +1,17 @@
 :root{
        scroll-behavior: smooth;
         font-size:100%;
-        font-family: "Space Grotesk", sans-serif;
 
-        --color-beige: #FFFAEE;
-        --color-azul: #5585FF;
-        --color-hover: greenyellow;
-        --color-negro: black;
+        /* Tipografía */
+        font-family: "Space Grotesk", sans-serif; /*Tipografía que se usa a lo largo de toda la web*/
 
+        /*Colores*/
+        --color-beige: #FFFAEE; /*Color claro, para el fondo*/
+        --color-azul: #5585FF;/*Color secundario complementario*/
+        --color-hover: greenyellow; /*Color que se utiliza en ciertas interacciones Javascript*/
+        --color-negro: black; /*Color principal del texto*/
+
+        /*Tipografia*/
         --tipografia-principal: "Space Grotesk", sans-serif;
         --tipografia-principal-light: 300;
         --tipografia-principal-size: 1.1rem;
@@ -15,6 +19,7 @@
         --tipografia-titulos-size: 5rem;
         --tipografia-titulos-bold: 600;
 
+        /*Medida del alto de la cabecera. me ayuda a estandarizar varias medidas de margenes y espacios en la web*/
         --medida-cabecera: 6rem;
 
 }
@@ -70,7 +75,6 @@ button , label{
 
 
 /* Cabecera */
-/* Tengo pendiente en la cabecera hacer la versión móvil */
 .Cabecera{
     width: 100%;
     min-height: var(--medida-cabecera);
@@ -245,11 +249,21 @@ button , label{
 .Menu-link{
     font-weight: var(--tipografia-principal-light);
     font-size: var(--tipografia-principal-size);
-    
+}
+
+.Menu-link:hover{
+    color: var(--color-azul);
+}
+
+/*El menu-trabajos desaparece en versión m´voil y no es sustituido por nada*/
+@media(max-width:800px) {
+    element-menu {
+        display: none;
+    }
 }
 
 
-/* Para los h1 */
+/* Estilo definido para los h1 de todas las páginas*/
 
 .Titulo{
     width: 50%;
@@ -266,3 +280,4 @@ button , label{
         width: 100%;
     }
 }
+

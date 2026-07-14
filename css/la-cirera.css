@@ -93,11 +93,6 @@ main {
     gap: 5rem;
 }
 
-@media(max-width:800px) {
-    element-menu {
-        display: none;
-    }
-}
 
 .Contenido {
     width: 70%;

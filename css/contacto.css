@@ -1,3 +1,10 @@
+/**\
+contacto.css
+- Reset
+- Cabecera
+-Main
+\**/
+
 :root{
        scroll-behavior: smooth;
         font-size:100%;
@@ -60,6 +67,8 @@ main{
     gap: 5rem;
 }
 
+/* pseudo-elemento especifico para personalizar la cabecera en cada página*/
+
 .Cabecera-a--contacto::before {
   content: "";
   width: 15px;
@@ -70,28 +79,7 @@ main{
   margin-right: .4rem;
 }
 
-.Columna{
-    /* background-color: aqua; */
-    width: 14%;
-    margin: 5rem 0rem 0rem 4rem;
-    padding: 1rem;
-
-    position: relative;
-
-    display: none;
-
-    /* display:flex;
-    flex-flow: column nowrap;
-    justify-content: end;
-    align-items: center; */
-}
-
-.Columna-img{
-    position: absolute;
-    bottom: 0;
-
-}
-
+/*Contenido de la pagina de contacto*/
 .Contenido{
     width: 90%;
     max-width: 1100px;
@@ -111,6 +99,7 @@ main{
     line-height: var(--tipografia-titulos-size);
 }
 
+/*Dar espacio con los enlaces de abajo*/
 .Contenido-texto:last-child{
     margin: 0rem 0rem 2rem; 
 }
@@ -126,6 +115,8 @@ main{
 .Contenido-div{
     overflow: hidden;
 }
+
+/*CSS para la animación de texto*/
 
 .Contenido-texto--1{
     animation: contenidoTexto 1s ease;
@@ -150,14 +141,13 @@ main{
     
     from{
         transform: translateY(150%);
-        /* transform: scaleY(0); */
     }
     to{
         transform: translateY(0%);
-        /* transform: scaleY(1); */
     }
-    
 }
+
+/*Enlaces contacto*/
 .Contenido-enlace{
     background-color: var(--color-beige);
     font-size: 2rem;

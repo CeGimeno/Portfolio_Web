@@ -63,14 +63,20 @@ main{
 
 
 .Contenido{
-    background-color: red;
     width: 70%;
     margin: 10rem 0rem 0rem;
 }
 
+@media(max-width:800px) {
+    .Contenido {
+        width: 90%;
+        margin: auto;
+    }
+}
+
 .Contenido-sticky{
 
-    min-height: 200vh;
+    min-height: 350vh;
     margin:auto;
 
     position: relative;
@@ -97,17 +103,7 @@ main{
 
 }
 
-.Contenido-p{
-    width: 50%;
-    margin: auto;
-    font-weight: var(--tipografia-principal-light);
-    font-size: var(--tipografia-principal-size);
-    text-align: center;
-    
-}
-
 .Contenido-carrusel{
-    background-color: azure;
 
     overflow: hidden;
     max-height: 600px;
@@ -132,7 +128,7 @@ main{
     0%{
         transform: translateX(0%);
     }
-    50%{
+    40%{
         transform: translateX(-45%);
     }
     100%{
@@ -145,11 +141,77 @@ main{
 .Carrusel-img{
     height: 80%;
 }
+
+.Contenido-p{
+    width: 50%;
+    margin: 3rem 0rem 3rem auto;
+    font-weight: var(--tipografia-principal-light);
+    font-size: var(--tipografia-principal-size);
+    text-align:  left;
+}
+
+@media(max-width: 1000px){
+    .Contenido-p{
+        width: 90%;
+        text-align: left;
+        margin: 3rem auto 3rem 0rem;
+    }
+}
+
+@media(max-width:800px){
+    .Contenido-p{
+        text-align: center;
+    }
+}
+
 .Contenido-descripcion{
-    width: 70%;
+    width: 100%;
 
     display: grid;
     grid-template-columns: repeat( 2 , 1fr);
+    gap: 3rem;
+}
+
+@media(max-width:800px){
+    .Contenido-descripcion{
+        display: flex;
+        flex-flow: column-reverse nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.Descripcion-div{
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: start;
+}
+
+.Descripcion-h3{
+    font-weight: var(--tipografia-titulos-bold);
+    margin: 0rem 0rem 1rem;
+}
+
+@media(max-width: 800px){
+    .Descripcion-h3{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.Descripcion-p{
+    font-weight: var(--tipografia-principal-light);
+    font-size: var(--tipografia-principal-size);
+}
+
+@media(max-width:800px){
+    .Descripcion-p{
+        text-align: center;
+    }
+}
+
+.Galeria{
+    width: 100%;
 }
 
 .Contenido-columnas{
@@ -165,7 +227,10 @@ main{
 }
 
 .Contenido-columnas--reverse{
-    justify-content: start;
+    flex-flow: row-reverse nowrap;
+    justify-content: flex-end;
+
+    margin: 15rem 0rem 0rem;
 }
 
 .Columna-dibujo{
@@ -177,9 +242,10 @@ main{
     top:0;
 }
 
-.Contenido-dibujo .Contenido-columnas--reverse{
-    left:auto;
-    right: 0;
+.Contenido-columnas--reverse .Columna-dibujo{
+    left: 30%;
+    right: 20%;
+
 }
 .Columna-cartel{
     width: 40%;

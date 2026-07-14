@@ -1,3 +1,9 @@
+/**\
+servicios.css
+- Reset
+- Cabecera
+-Main
+\**/
 :root{
        scroll-behavior: smooth;
         font-size:100%;
@@ -52,7 +58,7 @@ button , label{
     cursor: pointer;
 }
 
-
+/* pseudo-elemento especifico para personalizar la cabecera en cada página*/
 .Cabecera-a--servicios::before {
   content: "";
   width: 15px;
@@ -85,8 +91,6 @@ button , label{
     max-width: 2000px;
     margin:0rem auto;
 
-    /* background-color: aquamarine; */
-
     display: flex;
     flex-flow: row nowrap;
     justify-content: start;
@@ -98,28 +102,19 @@ button , label{
 @media(max-width: 800px){
     .Servicios{
         width: 90%;
-
         flex-flow: column-reverse nowrap;
-
     }
 }
 
-/* .Servicios.Servicios--reverse{
-    flex-flow: row-reverse nowrap;
-} */
 
 .Servicios-columna{
     display: flex;
-
 }
 
 .Servicios-columna--content{
     width: 60%;
-    /* background-color: blue; */
     
     flex-flow: column nowrap;
-    /* justify-content: start;
-    align-items: start; */
 
     position: relative;
 }
@@ -164,8 +159,6 @@ button , label{
         margin: 1rem 0rem 0.2rem;
         font-size: 2rem;
         line-height: 2rem;
-
-        /* text-align: center; */
     }
 }
 
@@ -200,7 +193,6 @@ button , label{
 
     opacity: 0;
     pointer-events: none;
-    /* overflow: hidden; */
 }
 
 .Servicios-columna--img.isActive{
@@ -216,12 +208,8 @@ button , label{
 
     }
 }
-.Servicios-img{
 
-
-    
-}
-
+/*Segundo bloque de contenido*/
 .Contenido{
     width: 100%;
     background-color: var(--color-azul);
