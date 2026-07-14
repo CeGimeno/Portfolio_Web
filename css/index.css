@@ -71,6 +71,44 @@ button , label{
   margin-right: .4rem;
 }
 
+/* PRUEBA PRIMER BLOQUE*/
+.Inicio{
+    background-color: brown;
+    width: 100%;
+    height: 100vh;
+}
+
+.Carrusel-wrapper{
+    width: 200%;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.Carrusel-columna{
+    background-color: blue;
+    width: calc(200% /6);
+    height: 300px;
+
+    animation: movimientoCarrusel linear infinite 5s;
+}
+
+.Columna--inicio{
+    background-color: aquamarine;
+}
+
+.Columna--final{
+    background-color: aquamarine;
+}
+
+@keyframes movimientoCarrusel {
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-533%);
+    }
+    
+}
 /*PRIMER BLOQUE:
 -Titulo
 - texto presentacion
@@ -103,8 +141,8 @@ button , label{
     position: sticky;
 
     font-size: 4rem;
-    text-align: justify;
-    line-height: 3.5rem;
+    text-align: left;
+    line-height: 3.8rem;
     padding: 0rem 6rem;
     margin: 0rem 0rem 4rem;
 }

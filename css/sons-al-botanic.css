@@ -128,7 +128,7 @@ main{
     0%{
         transform: translateX(0%);
     }
-    40%{
+    47%{
         transform: translateX(-45%);
     }
     100%{
