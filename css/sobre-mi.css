@@ -55,7 +55,7 @@ button , label{
 }
 
 
-/* Esto me lo ha respondido la IA*/
+
 .Cabecera-a--sobremi::before {
   content: "";
   width: 15px;
@@ -67,9 +67,9 @@ button , label{
 }
 
 .Titulo{
-
     top:calc(var(--medida-cabecera) + 1rem);
 }
+
 .Wrapper{
     max-width: 1200px;
     display: grid;
@@ -87,10 +87,6 @@ button , label{
     }
 }
 
-.Columna{
-    /* background-color: brown; */
-
-}
 
 .Columna--izquierda{
     margin: 0rem auto;
@@ -117,7 +113,6 @@ button , label{
     width: 60%;
     margin:auto;
     padding: 4rem 0rem 0rem;
-    /* transform: rotate(-15deg); */
 
     animation: imagenGiro linear both;
     animation-timeline: scroll(root block);
@@ -137,6 +132,12 @@ button , label{
     .Columna-img{
         width: 80%;
         padding: 4rem 0rem 0rem 1rem;
+    }
+}
+
+@media(max-width: 450px){
+    .Columna-img{
+        display:none;
     }
 }
 

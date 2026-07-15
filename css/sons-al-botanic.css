@@ -76,11 +76,16 @@ main{
 }
 
 .Contenido-sticky{
-
     min-height: 350vh;
     margin:auto;
 
     position: relative;
+}
+
+@media(max-width:1000px){
+    .Contenido-sticky{
+        min-height: 220vh;
+    }
 }
 
 .Sticky-carrusel{
@@ -106,9 +111,11 @@ main{
 
 .Contenido-carrusel{
 
+
     overflow: hidden;
     max-height: 600px;
 }
+
 
 .Carrusel-wrapper{
     width: 180%;
@@ -122,6 +129,7 @@ main{
     animation-range: entry(0%)  exit(180%);
     transform-origin: center center;
 }
+
 
    
 
@@ -138,10 +146,31 @@ main{
     
 }
 
+@media(max-width:1200px){
+    .Carrusel-wrapper{
+        width: 300%;
 
-.Carrusel-img{
-    height: 80%;
+        animation: movimientoCarruselMovil linear both;
+    animation-timeline: scroll(root block);
+    animation-range: entry(0%)  exit(180%);
+    transform-origin: center center;
+    }
 }
+
+@keyframes movimientoCarruselMovil {
+    0%{
+        transform: translateX(0%);
+    }
+    47%{
+        transform: translateX(-70%);
+    }
+    100%{
+        transform: translateX(-70%);
+    }
+    
+}
+
+
 
 .Contenido-p{
     width: 50%;

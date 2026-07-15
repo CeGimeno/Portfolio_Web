@@ -370,9 +370,14 @@ button , label{
 
 @media(max-width: 700px){
     .Contenido-h2{
+        width: 85%;
+        margin: auto;
+        padding-top: 3rem;
+
         font-size: var(--tipografia-titulos-movil);
         line-height: var(--tipografia-titulos-movil);
         text-align: center;
+
     }
 }
 
@@ -384,9 +389,20 @@ button , label{
     margin: 3rem 0rem;
 }
 
+
 .Contenido-p--beis{
     color: var(--color-beige);
     margin: 3rem 0rem 1rem;
+}
+
+@media(max-width:800px){
+    .Contenido-p{
+        width: 85%;
+        margin: auto;
+        padding-top: 3rem;
+        text-align: center;
+    
+    }
 }
 
 .Contenido-enlace{

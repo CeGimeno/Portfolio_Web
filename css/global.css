@@ -8,7 +8,7 @@
         /*Colores*/
         --color-beige: #FFFAEE; /*Color claro, para el fondo*/
         --color-azul: #5585FF;/*Color secundario complementario*/
-        --color-hover: greenyellow; /*Color que se utiliza en ciertas interacciones Javascript*/
+        --color-hover: #ADFF2F ; /*Color que se utiliza en ciertas interacciones Javascript*/
         --color-negro: black; /*Color principal del texto*/
 
         /*Tipografia*/
