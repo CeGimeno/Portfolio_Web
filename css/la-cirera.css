@@ -96,14 +96,14 @@ main {
 
 .Contenido {
     width: 70%;
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 10rem 0rem 0rem;
 }
 
 @media(max-width:800px) {
     .Contenido {
         width: 90%;
-        margin: auto;
+        margin: 6rem auto 0rem;
     }
 }
 

@@ -62,11 +62,16 @@ main{
 }
 
 .Contenido{
-    background-color: red;
     width: 70%;
     margin: 10rem 0rem 0rem;
 }
 
+@media(max-width:800px) {
+    .Contenido {
+        width: 90%;
+        margin: 6rem auto 0rem;
+    }
+}
 .Contenido-h1{
     font-family: var(--tipografia-principal);
     font-weight: 600;
@@ -85,21 +90,48 @@ main{
 
 .Contenido-p{
     width: 50%;
-    margin: auto;
+    max-width: 1300px;
+    margin: auto 0rem 0rem;
 
     font-family: var(--tipografia-principal);
     font-weight: var(--tipografia-principal-light);
     font-size: var(--tipografia-principal-size);
-    text-align: center;
+    text-align: left;
+}
+
+@media(max-width:800px){
+    .Contenido-p{
+        width: 100%;
+        text-align: center;
+    }
 }
 
 .Contenido-grid{
+    margin: 3rem 0rem;
     display:grid;
     grid-template-columns: repeat( 2 , 1fr);
-    gap: 1rem;
+    gap: 3rem;
 }
 
-.Cotenido-img{
-    height: 300px;
-    background-color:blue;
+.Contenido-grid .Contenido-p{
+    width: 90%;
+}
+
+@media(max-width:600px){
+    .Contenido-grid{
+        display:flex;
+        flex-flow: column nowrap;
+    }
+}
+
+
+.Contenido-img--sola{
+    width: calc(50% - 1.5rem);
+    margin: 0rem 0rem 3rem auto;
+}
+
+@media(max-width:600px){
+    .Contenido-img--sola{
+        width: 100%;
+    }
 }
