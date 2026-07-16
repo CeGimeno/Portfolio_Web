@@ -15,7 +15,7 @@ class Cabecera extends HTMLElement{
       <li class="Cabecera-li"> <a href="contacto.html" class="Cabecera-a--contacto">Contacto</a></li>
     </ul>
   </nav>  
-  <button class="Cabecera-button">
+  <button class="Cabecera-button" tittle="Boton menu">
    <span class="Cabecera-menu isVisible"> Menu</span>
     <span class="Cabecera-cerrar">Cerrar</span></button>
   <div class="Desplegable">

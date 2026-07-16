@@ -1,7 +1,6 @@
 "use strict"
 
 // Cuando paso el ratón por portada-img--taza, se le añade "ISActive" a portada-aside--taza
-// Creo que esto que he hecho sería más fácil con dos querySelectorAll y hacer que cuando paso el ratón por una imagen el texto del mismo índice se active
 
 const imagenTaza = document.querySelector(`.Objeto-img--taza`)
 const textoTaza = document.querySelector(`.Objeto-aside--taza`)
