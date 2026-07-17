@@ -88,7 +88,7 @@ button , label{
 }
 
 
-.Columna--izquierda{
+.Columna-izquierda{
     margin: 0rem auto;
     display: flex;
     flex-flow: column nowrap;
@@ -96,6 +96,12 @@ button , label{
     align-items: center;
 
     position:relative;
+}
+
+@media(max-width:500px){
+    .Columna-izquiera{
+        display: none;
+    }
 }
 
 
@@ -175,7 +181,7 @@ button , label{
     color: var(--color-negro);
 }
 
-.Columna--derecha{
+.Columna-derecha{
     width: 80%;
 
     position:relative;
@@ -184,7 +190,7 @@ button , label{
 }
 
 @media(max-width: 700px){
-    .Columna--derecha{
+    .Columna-derecha{
         width: 90%;
         padding: 0rem 1rem 0rem 2rem;
     }

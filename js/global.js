@@ -35,7 +35,7 @@ class Cabecera extends HTMLElement{
 customElements.define( 'element-cabecera' , Cabecera )
 
 
-// MENU DESPLEGABLE DLE MOVIL
+// MENU DESPLEGABLE DEL MOVIL
 
 const cabeceraMenu = document.querySelector(`.Cabecera-menu`)
 const cabeceraCerrar = document.querySelector(`.Cabecera-cerrar`)
@@ -64,11 +64,9 @@ cabeceraCerrar.addEventListener(`click`, () => {
 class Menu extends HTMLElement{
     connectedCallback(){
         this.innerHTML =` <div class="Menu">
-        <div class="Menu-link"><a href="la-cirera.html" class="Menu-a"></a>La Cirera</div>
+        <div class="Menu-link"><a href="la-cirera.html" class="Menu-a">La Cirera</a></div>
         <div class="Menu-link"><a href="esporas-en-la-lengua.html" class="Menu-a">esporas en la lengua</a></div>
         <div class="Menu-link"><a href="sons-al-botanic.html" class="Menu-a">Sons al Botànic</a></div>
-        <div class="Menu-link"><a href="esporas-en-la-lengua.html" class="Menu-a">esporas en la lengua</a></div>
-        <div class="Menu-link">Trabajo5</div>
     </div>`
     }
   }

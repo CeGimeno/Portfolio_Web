@@ -244,6 +244,7 @@ label {
 .Servicios-columna--img.isActive {
     opacity: 1;
     pointer-events: all;
+    transform: translateY(-10rem);
 }
 
 @media (max-width: 1100px) {
@@ -252,6 +253,8 @@ label {
         z-index: 0;
         bottom: -3rem;
         right: 0;
+
+        transform: translateY(0rem)
 
     }
 }
