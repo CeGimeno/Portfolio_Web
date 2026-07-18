@@ -1,6 +1,6 @@
 "use strict"
 
-// Cabecera
+// Cabecera para añadir en el HTML
 
 class Cabecera extends HTMLElement{
     connectedCallback(){
@@ -35,7 +35,7 @@ class Cabecera extends HTMLElement{
 customElements.define( 'element-cabecera' , Cabecera )
 
 
-// MENU DESPLEGABLE DEL MOVIL
+// INTERACCIÓN MENU DESPLEGABLE DEL MOVIL
 
 const cabeceraMenu = document.querySelector(`.Cabecera-menu`)
 const cabeceraCerrar = document.querySelector(`.Cabecera-cerrar`)
@@ -59,7 +59,7 @@ cabeceraCerrar.addEventListener(`click`, () => {
     cabeceraMenu.classList.add(`isVisible`)
     })
 
-// Submenu a la derecha de las páginas individuales de los trabajos
+// Submenu a la derecha de las páginas individuales de los trabajos para añadir en el HTML
 
 class Menu extends HTMLElement{
     connectedCallback(){
@@ -74,6 +74,7 @@ class Menu extends HTMLElement{
   customElements.define( 'element-menu' , Menu )
 
   //POP UP DE LA PÁGINA SOBRE MI
+  //Selecciono la imagen de Contacto y edl vi contiguo
 
   const imagenSobremi = document.querySelector(`#imagenSobremi`)
   const popupSobremi = document.querySelector(`#popupSobremi`)
@@ -84,6 +85,7 @@ class Menu extends HTMLElement{
 }
 )
 
+//cuando el ratón se va de la imagen, se le quita la clase is active
 imagenSobremi.addEventListener(`mouseout`, () => {
     popupSobremi.classList.remove(`isActive`)
 }
