@@ -87,6 +87,12 @@ button , label{
     }
 }
 
+@media(max-width: 700px){
+    .Wrapper{
+        display: flex;
+        flex-flow: column;
+    }
+}
 
 .Columna-izquierda{
     margin: 0rem auto;
