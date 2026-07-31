@@ -60,6 +60,8 @@ button , label{
     cursor: pointer;
 }
 
+
+
 /* pseudo-elemento especifico para personalizar la cabecera en cada página*/
 .Cabecera-a--inicio::before {
   content: "";
@@ -79,22 +81,39 @@ button , label{
 .Titulo{
     position: sticky;
     top: calc(var(--medida-cabecera) + 1rem);
+
+    font-size: 2.5rem;
+    font-weight: 300;
 }
 
 .Portada{
-    min-height: 70vh;
+    min-height: 80vh;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-content: center;
 
     position: relative;
+    
 
 }
 
-.Portada-wrapper{
+.Titulo{
     position: sticky;
-    top:12rem;
+    top: calc(var(--medida-cabecera) + 1rem);
+
+    font-size: 2.5rem;
+    font-weight: 300;
+    z-index: 3;
+}
+
+
+
+.Contenido-wrapper{
+    position: sticky;
+    top: var(--medida-cabecera);
+    background-color: var(--color-beige);
+    padding: 0rem 0rem;
 }
 
 
@@ -105,7 +124,6 @@ button , label{
     font-size: 4rem;
     text-align: left;
     line-height: 3.8rem;
-    padding: 0rem 6rem;
     margin: 0rem 0rem 4rem;
 }
 
@@ -139,8 +157,9 @@ button , label{
     justify-content: end;
 
     position: absolute;
-    bottom: 2rem;
-    z-index:1;
+    top: 13rem;
+    right: 5rem;
+    z-index:2;
 
 }
 
@@ -200,7 +219,7 @@ button , label{
         transform: rotate(-10deg);
     }
     to{
-        transform: rotate(90deg);
+        transform: rotate(30deg);
     }
     
 }
