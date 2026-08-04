@@ -1,23 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Puñales de Martí</title>
+    <script defer src="js/global.js"></script>
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/de-marti.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <element-cabecera></element-cabecera>
     <main>
+        <!-- Menú lateral de trabajos añadido desde Javascript -->
         <element-menu></element-menu>
+        <!-- Portada del proyecto. Contiene:
+        titulo
+        texto
+        imagen de Portada
+        texto -->
         <div class="Contenido">
-            
+            <h1 class="Contenido-h1"> proyecto - Los puñales de Martín</h1>
+            <h2 class="Contenido-h2">Identidad visual</h2>
+            <p class="Portada-p">Puñales de Martín es un grupo de música indie que quería tener una identidad gráfica
+                propia. Flexible, para soportes y que permitiese una identificación rápida.
+                El único requisito del grupo: huir de una imagen de los puñales.</p>
+            <picture>
+                <img src="assets/marti-portada.webp" alt="Portada Puñales de Martí" class="Portada-img">
+            </picture>
+            <p class="Portada-p">El dibujo de los tres muñecos (el grupo está formado por tres músicos) se convierte en
+                el elemento principal para generar las piezas gráficas y se asienta como el gráfico esencial e
+                identificativo del grupo.</p>
+
+            <!-- Segundo bloque de información del proyecto.-->
+            <div class="Contenido-seccion Contenido-seccion--fotos">
+                <picture>
+                    <img src="assets/puñales-de-marti-1.webp" alt="Foto Puñales de Martín" class="Contenido-img">
+                </picture>
+                <picture>
+                    <img src="assets/puñales-de-marti-2.webp" alt="Foto Puñales de Martín" class="Contenido-img">
+                </picture>
+            </div>
+            <div class="Contenido-seccion Contenido-seccion--mix">
+                <picture>
+                    <img src="assets/puñales-de-marti-3.webp" alt="Foto Puñales de Martín" class="Contenido-img">
+                </picture>
+                <p class="Contenido-p Contenido-p--grid">Algunas imágenes del logotipo e identidad gráfica aplicada a
+                    camisetas y pegatinas.
+                    Se trabaja una estética variada y cambiante, en la que el imagotipo convive con distintas
+                    tipografías y modos de aplicación.</p>
+            </div>
+            <p class="Contenido-p">Además del logotipo, se trabajan propuestas de aplicaciones para carteles y material
+                promocional.
+                Se establece una paleta de colores y se mantiene la variedad de tipografías.</p>
+            <div class="Contenido-grid">
+                <!-- Bloque de fotos finales -->
+                <picture>
+                    <img src="assets/puñales-de-marti-6.webp" alt="Foto Puñales de Martín" class="Contenido-img">
+                </picture>
+                <picture>
+                    <img src="assets/puñales-de-marti-4.webp" alt="Foto Puñales de Martín" class="Contenido-img">
+                </picture>
+                <picture>
+                    <img src="assets/puñales-de-marti-5.webp" alt="Foto Puñales de Martín" class="Contenido-img">
+                </picture>
+                <picture>
+                    <img src="assets/puñales-de-marti-7.webp"  alt="Foto Puñales de Martín" class="Contenido-img">
+                </picture>
+            </div>
         </div>
+        <!-- Bloque de fotos finales -->
+
     </main>
-    
+
 </body>
+
 </html>

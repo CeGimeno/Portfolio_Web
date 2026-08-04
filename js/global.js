@@ -67,6 +67,7 @@ class Menu extends HTMLElement{
         <div class="Menu-link"><a href="la-cirera.html" class="Menu-a">La Cirera</a></div>
         <div class="Menu-link"><a href="esporas-en-la-lengua.html" class="Menu-a">esporas en la lengua</a></div>
         <div class="Menu-link"><a href="sons-al-botanic.html" class="Menu-a">Sons al Botànic</a></div>
+        <div class="Menu-link"><a href="de-marti.html" class="Menu-a">Puñales de Martín</a></div>
     </div>`
     }
   }
