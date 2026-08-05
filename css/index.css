@@ -84,10 +84,11 @@ button , label{
 
     font-size: 2.5rem;
     font-weight: 300;
+    z-index: 1;
 }
 
 .Portada{
-    min-height: 80vh;
+    min-height: 50vh;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -98,32 +99,18 @@ button , label{
 
 }
 
-.Titulo{
-    position: sticky;
-    top: calc(var(--medida-cabecera) + 1rem);
-
-    font-size: 2.5rem;
-    font-weight: 300;
-    z-index: 3;
-}
 
 
-
-.Contenido-wrapper{
-    position: sticky;
-    top: var(--medida-cabecera);
-    background-color: var(--color-beige);
-    padding: 0rem 0rem;
-}
 
 
 .Destacado{
     width: 100%;
     position: sticky;
 
-    font-size: 4rem;
+    font-size: 3rem;
+    font-weight: 300;
     text-align: left;
-    line-height: 3.8rem;
+    line-height: 3.2rem;
     margin: 0rem 0rem 4rem;
 }
 
@@ -159,7 +146,7 @@ button , label{
     position: absolute;
     top: 13rem;
     right: 5rem;
-    z-index:2;
+    z-index:0;
 
 }
 
@@ -244,7 +231,7 @@ button , label{
     bottom: 0rem;
     right: 7rem;
     
-    z-index: 1;
+    z-index: 0;
 
 
     opacity: 0;
@@ -260,7 +247,7 @@ button , label{
     top: 25%;
     left: -4rem;
     
-    z-index: 1;
+    z-index: 0;
 
 
     opacity: 0;
@@ -275,6 +262,7 @@ button , label{
     background-color: greenyellow;
 
     opacity: 1;
+    z-index: ;
 }
 
 .Objeto-aside--ordenador.isActive{
@@ -285,7 +273,7 @@ button , label{
 
 /*Parrafo de la primera pantalla*/
 
-.Presentacion{
+/* .Presentacion{
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -295,7 +283,7 @@ button , label{
 .Presentacion-p{
     width: 30%;;
     text-align:center;
-}
+} */
 
 
 /* Hasta aqui la primera pantalla */
@@ -304,9 +292,9 @@ button , label{
 - titulo + texto*/
 
 .Contenido{
-    background-color: var(--color-beige);
+
     min-height: calc( 100vh - var(--medida-cabecera));
-    z-index: 1;
+    z-index: 2;
 
     padding: 3rem 6rem;
 
@@ -314,7 +302,11 @@ button , label{
     position: sticky;
     top: var(--medida-cabecera);
 }
-
+.Contenido-wrapper{
+    position: sticky;
+    top: var(--medida-cabecera);
+    padding: 0rem 0rem;
+}
 .Contenido--azul{
     background-color: var(--color-azul);
 }
@@ -331,11 +323,15 @@ button , label{
 }
 
 .Contenido-h2{
-    width: 70%;
+    width: 80%;
     font-size: var(--tipografia-titulos-size);
     font-weight: var(--tipografia-titulos-bold);
 
     line-height: var(--tipografia-titulos-size)
+}
+
+.Contenido--beis{
+    background-color: var(--color-beige);
 }
 
 .Contenido-h2--beis{
@@ -386,13 +382,13 @@ button , label{
     }
 }
 
-.Contenido-enlace{
-    font-size: var(--tipografia-principal-size);
-    color: var(--color-beige)
-}
 
+.Contenido-button{
+    width: 10rem;
+    min-height: 3rem;
+    background-color: var(--color-azul);
 
-.Contenido-enlace:hover{
-    color: black;
-    text-decoration: underline;
+    color: var(--color-beige);
+    font-size: 1.2rem;
+    font-weight: 600;
 }
