@@ -227,7 +227,7 @@ label {
 
 
 .Servicios-columna--img {
-    width: 30%;
+    width: 35%;
     max-width: 300px;
     /* min-height: 50vh; */
     flex-flow: row nowrap;
@@ -258,6 +258,19 @@ label {
         transform: translateY(0rem)
 
     }
+}
+
+/* Especificaciones de algunas imagenes */
+.Servicios-img--web{
+    transform: translateY(-10rem) rotate(-10deg);  
+}
+
+.Servicios-img--rrss{
+    transform: translateY(-5rem) rotate(5deg);
+}
+
+.Servicios-img--carteleria{
+    transform: scale(1.3);
 }
 
 /*Segundo bloque de contenido*/
