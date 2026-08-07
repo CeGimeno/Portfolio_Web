@@ -87,7 +87,7 @@ button , label{
 
     position: fixed;
     top: 0px;
-    z-index: 2;
+    z-index: 3;
 }
 
 @media(max-width:700px){

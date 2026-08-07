@@ -82,9 +82,16 @@ button , label{
     position: sticky;
     top: calc(var(--medida-cabecera) + 1rem);
 
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 300;
     z-index: 1;
+}
+
+@media(max-width:700px){
+    .Titulo{
+        font-size: 2rem;
+        font-weight: 400;
+    }
 }
 
 .Portada{
@@ -95,11 +102,14 @@ button , label{
     align-content: center;
 
     position: relative;
-    
-
 }
 
-
+@media(max-width:700px){
+    .Portada{
+        min-height: auto;
+        margin: 0rem 0rem 2rem;
+    }
+}
 
 
 
@@ -109,9 +119,9 @@ button , label{
 
     font-size: 3rem;
     font-weight: 300;
-    text-align: left;
+    text-align: center;
     line-height: 3.2rem;
-    margin: 0rem 0rem 4rem;
+
 }
 
 @media(max-width: 1000px){
@@ -120,21 +130,24 @@ button , label{
         line-height: 3rem;
         text-align: center;
 
-        padding: 0rem 2rem;
+        
     }
 }
 
 @media(max-width: 700px){
     .Destacado{
-        font-size: 2.4rem;
-        line-height: 2rem;
-        text-align: center;
+        font-size: 1.9rem;
+        min-height: 80vh;
+        line-height: 1.9rem;
+    
 
-        padding: 0rem 2rem;
+        padding: 0rem 1rem 1rem;
+        
+    
     }
 }
 
-/*Objetos ordenador + taza.*/
+/*Objetos ordenador + taza + boli.*/
 
 .Objeto{
     width: 100%;
@@ -153,7 +166,7 @@ button , label{
 
 @media(max-width: 1000px){
     .Objeto{
-        top: 10rem;
+        top: 8rem;
     }
 }
 
@@ -214,11 +227,45 @@ button , label{
 @media(max-width: 700px){
     .Objeto-ordenador{
         width: 50%;
+        margin: 0rem 0rem 0rem;
     }
 }
 
+.Objeto-boli{
+    width: 30%;
+    height: fit-content;
+    position: absolute;
+
+    left: 10%;
+    top: 50%;
+
+    animation: giroBoli linear both;
+    animation-timeline: scroll(root block);
+    animation-range: entry(0%)  exit(100%);
+    transform-origin: center center;
+
+}
+
+@keyframes giroBoli {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(90deg);
+    }
+    
+}
+
+@media(max-width: 700px){
+    .Objeto-boli{
+        width: 50%;
+
+        left: 50%;
+        top:120%;
+    }
+}
 .Objeto-img{
-    width: 90%;
+    width: 80%;
 }
 
 /*Clases para la interacción con JavaScript*/
@@ -262,7 +309,7 @@ button , label{
     background-color: greenyellow;
 
     opacity: 1;
-    z-index: ;
+    z-index: 0;
 }
 
 .Objeto-aside--ordenador.isActive{
@@ -302,11 +349,7 @@ button , label{
     position: sticky;
     top: var(--medida-cabecera);
 }
-.Contenido-wrapper{
-    position: sticky;
-    top: var(--medida-cabecera);
-    padding: 0rem 0rem;
-}
+
 .Contenido--azul{
     background-color: var(--color-azul);
 }
@@ -314,7 +357,10 @@ button , label{
 @media(max-width: 700px){
     .Contenido{
         padding:0rem;
-        margin: auto;
+        margin: auto ;
+        padding: 0rem 0rem 4rem;
+
+        top: -30%;
     }
 }
 
@@ -340,14 +386,15 @@ button , label{
 
 @media(max-width: 1000px){
     .Contenido-h2{
-        font-size: 3rem;
-        line-height: 3rem;
+        font-size: 2.5rem;
+        line-height: 2.5rem;
     }
 }
 
 @media(max-width: 700px){
     .Contenido-h2{
         width: 85%;
+        min-height: fit-content;
         margin: auto;
         padding-top: 3rem;
 
@@ -391,4 +438,10 @@ button , label{
     color: var(--color-beige);
     font-size: 1.2rem;
     font-weight: 600;
+}
+
+@media(max-width:700px){
+    .Contenido-button{
+        margin:2rem auto;
+    }
 }
