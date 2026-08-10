@@ -111,6 +111,9 @@ button , label{
     }
 }
 
+.Contenido--portada{
+    height: fit-content;
+}
 
 
 .Destacado{
