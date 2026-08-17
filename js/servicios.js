@@ -17,3 +17,34 @@ servicios.forEach((_,i)=>{
         imagenes[i].classList.add(`isActive`)
     })
 })
+
+//En tamaño movil, cuando el scroll pasa por un elemento de servicios, aparece l aimagen relacionada a ese texto
+//
+
+if (window.matchMedia('(max-width: 700px)').matches){
+
+    const observer = new IntersectionObserver((entries) => {
+
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+
+      // Quitar active de todos
+      enlaces.forEach(enlace => {
+        enlace.classList.remove('active');
+      });
+
+      // Buscar el enlace correspondiente
+      const enlaceActivo = document.querySelector(
+        `.menu a[href="#${entry.target.id}"]`
+      );
+
+      // Activarlo
+      if (enlaceActivo) {
+        enlaceActivo.classList.add('active');
+      }
+    }
+  });
+}, {
+  threshold: 0.5
+});
+}
