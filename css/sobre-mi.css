@@ -78,6 +78,8 @@ button , label{
     align-content: start;
     justify-items: start;
     align-items: start;
+
+    position: relative;
 }
 
 @media(max-width: 1000px){
@@ -94,6 +96,7 @@ button , label{
     }
 }
 
+/* Columna de la imagen */
 .Columna-izquierda{
     margin: 0rem auto;
     display: flex;
@@ -101,7 +104,8 @@ button , label{
     justify-content: start;
     align-items: center;
 
-    position:relative;
+    position:sticky;
+    top:10rem;
 }
 
 @media(max-width:500px){
@@ -113,18 +117,20 @@ button , label{
 
 @keyframes imagenGiro {
     from{
-        transform: rotate(-10deg);
+        transform: rotate(-20deg);
     }
     to{
-        transform: rotate(40deg);
+        transform: rotate(60deg);
     }
     
 }
 
 .Columna-img{
+    
     width: 60%;
     margin:auto;
     padding: 4rem 0rem 0rem;
+    
 
     animation: imagenGiro linear both;
     animation-timeline: scroll(root block);
@@ -140,14 +146,10 @@ button , label{
     }
 }
 
-@media(max-width: 700px){
-    .Columna-img{
-        width: 80%;
-        padding: 4rem 0rem 0rem 1rem;
-    }
-}
+/* Cuando el Wrapper se convierte en una columna en 700px, la imagen desaparece */
 
-@media(max-width: 450px){
+
+@media(max-width: 700px){
     .Columna-img{
         display:none;
     }
@@ -187,19 +189,40 @@ button , label{
     color: var(--color-negro);
 }
 
+/* Columna de texto */
+
 .Columna-derecha{
     width: 80%;
+    padding: 0rem 0rem 3rem;
 
-    position:relative;
-    z-index:1;
-     height: 800px;
 }
 
 @media(max-width: 700px){
     .Columna-derecha{
         width: 90%;
-        padding: 0rem 1rem 0rem 2rem;
+        margin: auto;  
+}
+}
+
+.Columna-texto{
+    margin: 2rem 0rem 0rem;
+}
+
+
+.Columna-aside{
+    margin: 2rem 0rem 0rem;
+}
+
+@media(max-width:700px){
+    .Columna-texto, .Columna-aside{
+        text-align: center;
     }
+}
+
+.Columna-a{
+    display: inline;
+    color: var(--color-azul);
+    text-decoration: underline;
 }
 
 .Columna-section{
@@ -207,4 +230,11 @@ button , label{
 }
 .Columna-h2{
     font-weight: var(--tipografia-titulos-bold);
+    margin: 0rem 0rem 0.5rem;
+}
+
+@media(max-width:700px){
+    .Columna-h2, .Columna-p{
+        text-align: center;
+    }
 }
