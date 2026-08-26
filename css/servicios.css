@@ -157,6 +157,10 @@ label {
     }
 }
 
+.Servicios.isActive{
+    color: var(--color-azul);
+}
+
 
 .Servicios-columna {
     display: flex;
@@ -222,6 +226,8 @@ label {
         height: 0rem;
     }
 }
+
+
 
 /* Columna imagenes */
 
