@@ -341,7 +341,7 @@ Aquí también se define: estilo d ela clase .Contenido para el resto de la pág
     }
 }
 
-@media(max-height: 700px){
+@media(max-height: 800px){
     .Contenido--portada{
         position: static;
         padding: 0rem 1rem 2rem
@@ -413,6 +413,13 @@ Aquí también se define: estilo d ela clase .Contenido para el resto de la pág
     color: var(--color-beige)
 }
 
+@media(max-width: 1200px){
+    .Contenido-h2{
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+}
+
 @media(max-width: 1000px){
     .Contenido-h2{
         font-size: 2.5rem;
@@ -420,7 +427,7 @@ Aquí también se define: estilo d ela clase .Contenido para el resto de la pág
     }
 }
 
-@media(max-width: 700px){
+@media(max-width: 800px){
     .Contenido-h2{
         width: 85%;
         min-height: fit-content;
@@ -475,8 +482,9 @@ Aquí también se define: estilo d ela clase .Contenido para el resto de la pág
     text-decoration: underline;
 }
 
-@media(max-width:700px){
+@media(max-width:800px){
     .Contenido-button{
         margin:2rem auto;
+
     }
 }
