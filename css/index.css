@@ -322,6 +322,12 @@ Aquí también se define: estilo d ela clase .Contenido para el resto de la pág
     top: var(--medida-cabecera);
 }
 
+@media(max-height: 800px){
+    .Contenido{
+    position: static;
+}
+}
+
 @media(max-width: 700px){
     .Contenido{
         margin: auto ;
@@ -337,7 +343,7 @@ Aquí también se define: estilo d ela clase .Contenido para el resto de la pág
 @media(max-width: 1000px){
     .Contenido--portada{
         position: static;
-        padding: 0rem 2rem 2rem;
+        padding: 0rem 6rem 2rem;
     }
 }
 
