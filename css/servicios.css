@@ -156,9 +156,17 @@ label {
         flex-flow: column-reverse nowrap;
     }
 }
+/* RESOLVER EL ISACTIVE DE AQUI */
+
 
 .Servicios.isActive{
-    color: var(--color-azul);
+    color: var(--color-negro);
+    font-family: "Cormorant Garamond", serif;
+    font-size: 5rem;
+  font-weight: 600;
+  font-style: italic;
+
+  transform: scale(1.1);
 }
 
 
@@ -187,7 +195,7 @@ label {
 
     font-weight: var(--tipografia-principal-regular);
     font-size: clamp(2rem , 8vh, 5.5rem);
-    line-height: 3.5rem;
+    line-height: 3.7rem;
 
     text-align: left;
     position: relative;
@@ -197,20 +205,26 @@ label {
 }
 
 .Servicios-h2:hover {
-    color: var(--color-azul);
+font-family: "Cormorant Garamond", serif;
+font-size: 5rem;
+  font-weight: 600;
+  font-style: italic;
+
+  transform: scale(1.1);
+
 }
 
-.Servicios-h2:hover::before {
+/* .Servicios-h2:hover::before {
     content: "";
     width: 1rem;
     height: 1rem;
-    background-color: var(--color-azul);
+    background-color: var(--color-negro);
     display: inline-block;
     margin: auto;
     border-radius: 50%;
     margin-right: .6rem;
 
-}
+} */
 
 @media (max-width: 800px) {
     .Servicios-h2 {

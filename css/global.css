@@ -227,7 +227,6 @@ button , label{
     color: var(--color-beige);
 }
 
-/* Footer */
 
 
 /* Menu-trabajos */
@@ -281,4 +280,71 @@ button , label{
         width: 100%;
     }
 }
+
+/* Footer */
+.Footer{
+    width: 100%;
+    display: flex;
+    flex-flow:row nowrap;
+
+    padding: 1rem 0rem;
+
+    border-top: 1.5px solid var(--color-azul) ;
+
+}
+
+@media(max-width:800px){
+    .Footer{
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+}
+
+.Footer-columna{
+    width: 50%;
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: center;
+    align-items: start;
+}
+
+@media(max-width:800px){
+    .Footer-columna {
+        width: 90%;
+        margin:auto;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.Columna-izquierda{
+    justify-content: start;
+
+    padding: 0rem 0rem 0rem 4rem;
+}
+
+@media(max-width:800px){
+    .Columna-izquierda{
+        padding:0rem;
+    }
+}
+
+.Footer-ul{
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content: center;
+    align-items: start;
+    gap: 2rem;
+}
+
+.Footer-a{
+    text-decoration: underline;
+}
+
+.Footer-a:hover{
+    color: var(--color-azul)
+}
+
 
