@@ -101,6 +101,24 @@ imagenSobremi.addEventListener(`mouseout`, () => {
 )
 }
 
+//Efecto acordeón para las preguntas frecuentes
+const buttons = document.querySelectorAll(`.Acordeon-button`)
+const parrafos =document.querySelectorAll(`.Acordeon-p`)
+//Cuando se haga click sobre un boton, el parrafo de ese mismo índice se actova
+//Cuando se active un parrafo, se desactivas los demas
+
+if (buttons && parrafos){
+  buttons.forEach((_,i) =>{
+    buttons[i].addEventListener(`click`, () => {
+            parrafos.forEach((_,j)=> {
+                parrafos[j].classList.remove(`isActive`)
+            })
+            parrafos[i].classList.add(`isActive`)
+
+            
+    })
+})
+}
 
 //Footer para añadir al pie de todas las páginas
 

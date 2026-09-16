@@ -373,3 +373,56 @@ CONTIENE:
         margin:2rem auto;
     }
 }
+
+/* Estilo para el acordeon */
+
+.Acordeon{
+    width: 100%;
+    background-color: var(--color-beige);
+    min-height: calc(100vh - var(--medida-cabecera));
+
+
+    padding: 10rem 10% 3rem;
+
+
+    position: relative;
+    z-index: 1;
+}
+
+.Acordeon-div{
+    width: 70%;
+    max-width: 1200px;
+}
+
+.Acordeon-ul{
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: start;
+}
+
+.Acordeon-li{
+    width: 100%;
+    border-bottom: 1.5px solid var(--color-azul) ;;
+}
+
+.Acordeon-button:hover{
+    color: var(--color-azul)
+}
+
+ .Acordeon-p{
+
+    padding: 0rem;
+    height: 0px;
+    overflow: hidden;
+    transition: all .5s ease;
+
+  }
+
+  .Acordeon-p.isActive{
+
+    padding: 2rem 0rem;
+    height: 200px;
+  }
+  
