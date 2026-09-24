@@ -61,7 +61,7 @@ button , label{
 
 main{
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow:column nowrap;
     min-height: 60vh;
 
     gap: 5rem;
@@ -173,4 +173,112 @@ main{
 .Contenido-enlace:hover{
     color: var(--color-azul);
     text-decoration: underline;
+}
+
+.Acordeon {
+    width: 100%;
+    background-color: var(--color-azul);
+    min-height: calc(100vh - var(--medida-cabecera));
+    padding: 3rem 10% 3rem;
+
+    position: relative;
+    z-index: 1;
+}
+
+.Acordeon-div {
+    width: 70%;
+    max-width: 1200px;
+}
+
+@media(max-width: 700px) {
+    .Acordeon-div {
+        width: 100%;
+    }
+}
+
+.Acordeon-aside {
+    font-size: var(--tipografia-titulos-size);
+    font-weight: var(--tipografia-titulos-bold);
+    line-height: var(--tipografia-titulos-size);
+
+    color:var(--color-beige);
+}
+
+@media(max-width: 1000px) {
+    .Acordeon-aside {
+        width: 100%;
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+}
+
+@media(max-width: 700px) {
+    .Acordeon-aside {
+        font-size: var(--tipografia-titulos-movil);
+        line-height: var(--tipografia-titulos-movil);
+        text-align: center;
+    }
+}
+
+.Acordeon-ul {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: start;
+
+    margin: 3rem 0rem 0rem;
+}
+
+@media(max-width:700px) {
+    .Acordeon-ul {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.Acordeon-li {
+    width: 100%;
+    border-bottom: 1.5px solid var(--color-beige);
+    margin: 0rem 0rem 1rem;
+}
+
+.Acordeon-button {
+    font-size: 2rem;
+    font-weight: var(--tipografia-principal-light);
+    color: var(--color-beige);
+}
+
+.Acordeon-button:hover {
+    color: var(--color-negro);
+}
+
+@media(max-width:700px) {
+    .Acordeon-button {
+        text-align: center;
+    }
+}
+
+.Acordeon-p {
+    width: 100%;
+    font-size: var(--tipografia-principal-size);
+
+    padding: 0rem;
+    height: 0px;
+    overflow: hidden;
+    transition: all .5s ease;
+
+}
+
+.Acordeon-p.isActive {
+
+    padding: 1rem 0rem;
+    height: 200px;
+}
+
+@media(max-width: 700px){
+    .Acordeon-p.isActive {
+        padding: 2rem 0rem;
+        height: fit-content;
+    }
 }
