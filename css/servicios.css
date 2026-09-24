@@ -102,7 +102,7 @@ label {
 
 }
 
-.Titulo{
+.Titulo {
     z-index: 2;
 }
 
@@ -121,15 +121,15 @@ label {
     top: calc(var(--medida-cabecera)*2);
 }
 
-@media(max-width:600px){
-    .Wrapper{
+@media(max-width:600px) {
+    .Wrapper {
         position: static;
         margin: 3rem 0rem 5rem;
     }
 }
 
-@media(max-height:600px){
-    .Wrapper{
+@media(max-height:600px) {
+    .Wrapper {
         position: static;
     }
 }
@@ -156,17 +156,18 @@ label {
         flex-flow: column-reverse nowrap;
     }
 }
+
 /* RESOLVER EL ISACTIVE DE AQUI */
 
 
-.Servicios.isActive{
+.Servicios.isActive {
     color: var(--color-negro);
     font-family: "Cormorant Garamond", serif;
     font-size: 5rem;
-  font-weight: 600;
-  font-style: italic;
+    font-weight: 600;
+    font-style: italic;
 
-  transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 
@@ -194,7 +195,7 @@ label {
     margin: 0rem 0rem 0.4rem;
 
     font-weight: var(--tipografia-principal-regular);
-    font-size: clamp(2rem , 8vh, 5.5rem);
+    font-size: clamp(2rem, 8vh, 5.5rem);
     line-height: 3.7rem;
 
     text-align: left;
@@ -205,12 +206,12 @@ label {
 }
 
 .Servicios-h2:hover {
-font-family: "Cormorant Garamond", serif;
-font-size: 5rem;
-  font-weight: 600;
-  font-style: italic;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 5rem;
+    font-weight: 600;
+    font-style: italic;
 
-  transform: scale(1.1);
+    transform: scale(1.1);
 
 }
 
@@ -231,11 +232,11 @@ font-size: 5rem;
         margin: 1rem 0rem 0.2rem;
         line-height: 3rem;
         font-size: 3rem;
-    } 
+    }
 }
 
-@media(max-width:500px){
-    .Servicios-h2:hover::before{
+@media(max-width:500px) {
+    .Servicios-h2:hover::before {
         width: 0rem;
         height: 0rem;
     }
@@ -275,20 +276,19 @@ font-size: 5rem;
         right: 0;
 
         transform: translateY(0rem)
-
     }
 }
 
 /* Especificaciones de algunas imagenes */
-.Servicios-img--web{
-    transform: translateY(-10rem) rotate(-10deg);  
+.Servicios-img--web {
+    transform: translateY(-10rem) rotate(-10deg);
 }
 
-.Servicios-img--rrss{
+.Servicios-img--rrss {
     transform: translateY(-5rem) rotate(5deg);
 }
 
-.Servicios-img--carteleria{
+.Servicios-img--carteleria {
     transform: scale(1.3);
 }
 
@@ -303,12 +303,28 @@ CONTIENE:
     min-height: calc(100vh - var(--medida-cabecera));
 
 
-    padding: 3rem 10% 3rem;
+    padding: 3rem 10%;
 
 
-    position: relative;
+    position: sticky;
+    top: var(--medida-cabecera);
     z-index: 1;
 
+}
+
+@media(max-height: 600px){
+    .Contenido{
+    position: relative;
+    min-height:100vh;
+}
+}
+
+@media(max-width: 1000px){
+    .Contenido{
+    position: relative;
+    min-height: 100vh;
+    padding: 1rem 10% 3rem;
+}
 }
 
 .Contenido-h2 {
@@ -321,16 +337,16 @@ CONTIENE:
 }
 
 
-@media(max-width: 1000px){
-    .Contenido-h2{
+@media(max-width: 1000px) {
+    .Contenido-h2 {
         width: 100%;
         font-size: 3rem;
         line-height: 3rem;
     }
 }
 
-@media(max-width: 700px){
-    .Contenido-h2{
+@media(max-width: 700px) {
+    .Contenido-h2 {
         font-size: var(--tipografia-titulos-movil);
         line-height: var(--tipografia-titulos-movil);
         text-align: center;
@@ -345,15 +361,15 @@ CONTIENE:
     color: var(--color-beige)
 }
 
-@media(max-width: 700px){
-    .Contenido-p{
+@media(max-width: 700px) {
+    .Contenido-p {
         width: 90%;
         margin: 3rem auto;
         text-align: center;
     }
 }
 
-.Contenido-button{
+.Contenido-button {
     width: 10rem;
     min-height: 3rem;
     background-color: var(--color-beige);
@@ -361,68 +377,124 @@ CONTIENE:
     color: var(--color-azul);
     font-size: 1.3rem;
     font-weight: 400;
+
+    margin: 2rem 0rem;
 }
 
-.Contenido-button:hover{
+.Contenido-button:hover {
     color: var(--color-negro);
     text-decoration: underline;
 }
 
-@media(max-width:700px){
-    .Contenido-button{
-        margin:2rem auto;
+@media(max-width:700px) {
+    .Contenido-button {
+        margin: 2rem auto 5rem;
     }
 }
 
 /* Estilo para el acordeon */
 
-.Acordeon{
+.Acordeon {
     width: 100%;
     background-color: var(--color-beige);
     min-height: calc(100vh - var(--medida-cabecera));
-
-
-    padding: 10rem 10% 3rem;
-
+    padding: 3rem 10% 3rem;
 
     position: relative;
     z-index: 1;
 }
 
-.Acordeon-div{
+.Acordeon-div {
     width: 70%;
     max-width: 1200px;
 }
 
-.Acordeon-ul{
+@media(max-width: 700px) {
+    .Acordeon-div {
+        width: 100%;
+    }
+}
+
+.Acordeon-aside {
+    font-size: var(--tipografia-titulos-size);
+    font-weight: var(--tipografia-titulos-bold);
+    line-height: var(--tipografia-titulos-size);
+}
+
+@media(max-width: 1000px) {
+    .Acordeon-aside {
+        width: 100%;
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+}
+
+@media(max-width: 700px) {
+    .Acordeon-aside {
+        font-size: var(--tipografia-titulos-movil);
+        line-height: var(--tipografia-titulos-movil);
+        text-align: center;
+    }
+}
+
+.Acordeon-ul {
     width: 100%;
     display: flex;
     flex-flow: column nowrap;
     justify-content: start;
     align-items: start;
+
+    margin: 3rem 0rem 0rem;
 }
 
-.Acordeon-li{
+@media(max-width:700px) {
+    .Acordeon-ul {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.Acordeon-li {
     width: 100%;
-    border-bottom: 1.5px solid var(--color-azul) ;;
+    border-bottom: 1.5px solid var(--color-azul);
+    margin: 0rem 0rem 1rem;
 }
 
-.Acordeon-button:hover{
+.Acordeon-button {
+    font-size: 2rem;
+    font-weight: var(--tipografia-principal-light);
+}
+
+.Acordeon-button:hover {
     color: var(--color-azul)
 }
 
- .Acordeon-p{
+@media(max-width:700px) {
+    .Acordeon-button {
+        text-align: center;
+    }
+}
+
+.Acordeon-p {
+    width: 100%;
+    font-size: var(--tipografia-principal-size);
 
     padding: 0rem;
     height: 0px;
     overflow: hidden;
     transition: all .5s ease;
 
-  }
+}
 
-  .Acordeon-p.isActive{
+.Acordeon-p.isActive {
 
-    padding: 2rem 0rem;
+    padding: 1rem 0rem;
     height: 200px;
-  }
-  
+}
+
+@media(max-width: 700px){
+    .Acordeon-p.isActive {
+        padding: 2rem 0rem;
+        height: fit-content;
+    }
+}
