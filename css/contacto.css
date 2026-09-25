@@ -91,6 +91,18 @@ main{
 
 }
 
+@media(max-width:700px){
+    .Contenido{
+        width: 100%;
+        padding: 1rem 5% 0rem;
+    }
+}
+
+.Contenido-div{
+    width: 100%;
+    overflow: hidden;
+}
+
 .Contenido-texto{
     background-color: var(--color-beige);
     margin: 0rem 0rem 0.6rem;
@@ -106,15 +118,12 @@ main{
 
 @media(max-width:800px){
     .Contenido-texto{
-        font-size: var(--tipografia-titulos-movil);
-        line-height: var(--tipografia-titulos-movil);
+        font-size: 3rem;
+        line-height: 2.8rem;
         margin: 0rem 0rem 0rem;
     }
 }
 
-.Contenido-div{
-    overflow: hidden;
-}
 
 /*CSS para la animación de texto*/
 
@@ -175,6 +184,8 @@ main{
     text-decoration: underline;
 }
 
+/* Estilo del acordeon */
+
 .Acordeon {
     width: 100%;
     background-color: var(--color-azul);
@@ -216,7 +227,7 @@ main{
     .Acordeon-aside {
         font-size: var(--tipografia-titulos-movil);
         line-height: var(--tipografia-titulos-movil);
-        text-align: center;
+       
     }
 }
 

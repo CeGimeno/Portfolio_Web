@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <script defer src="js/global.js"></script>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/aviso-legal.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <element-cabecera></element-cabecera>
+    <main>
+        <div class="Contenido">
+            <h1 class="Contenido-h1">Aviso legal</h1>
+            <section class="Contenido-section">
+                <h2 class="Contenido-h2">1. Datos identificativos</h2>
+                <p class="Contenido-p">En cumplimiento del artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios
+                    de la Sociedad de la Información y de Comercio Electrónico (LSSI-CE), se informa de los datos del
+                    titular de este sitio web:<br>
+                    Titular: [NOMBRE Y APELLIDOS]<br>
+                    Nombre comercial: [NOMBRE COMERCIAL, si lo usas]<br>
+                    NIF: [NIF]<br>
+                    Domicilio profesional: [DIRECCIÓN, CÓDIGO POSTAL, CIUDAD]<br>
+                    Correo electrónico: [EMAIL DE CONTACTO]<br>
+                    Sitio web: [DOMINIO]</p>
+            </section>
+            <section class="Contenido-section">
+                <h2 class="Contenido-h2">2. Objeto</h2>
+                <p class="Contenido-p">Este sitio web tiene como finalidad presentar los servicios profesionales de diseño gráfico y web de su titular y mostrar una selección de trabajos realizados. El acceso y uso de la web atribuye la condición de persona usuaria e implica la aceptación de este aviso legal.</p>
+
+            </section>
+        </div>
+    </main>
+
+</body>

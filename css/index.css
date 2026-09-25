@@ -238,74 +238,6 @@ button , label{
     width: 80%;
 }
 
-/* Clases para la interacción con JavaScript
-De momento descativamos las clases de Javascript porque no las estoy utilizando */
-
-/* .Objeto-taza .Objeto-aside{
-    width: 100%;
-    min-height: 50%;
-
-    position: absolute;
-    bottom: 0rem;
-    right: 7rem;
-    
-    z-index: 0;
-
-
-    opacity: 0;
-    pointer-events: none;
-
-}
-
-.Objeto-ordenador .Objeto-aside{
-    width: 60%;
-    min-height: 50%;
-
-    position: absolute;
-    top: 25%;
-    left: -4rem;
-    
-    z-index: 0;
-
-
-    opacity: 0;
-    pointer-events: none;
-
-}
-.Objeto-span{
-    color:black;
-}
-
-.Objeto-aside--taza.isActive{
-    background-color: greenyellow;
-
-    opacity: 1;
-    z-index: 0;
-}
-
-.Objeto-aside--ordenador.isActive{
-    background-color: greenyellow;
-
-    opacity: 1;
-} */
-
-/*Parrafo de la primera pantalla*/
-
-/* .Presentacion{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;    
-}
-
-.Presentacion-p{
-    width: 30%;;
-    text-align:center;
-} */
-
-
-
-
 /* Hasta aqui la primera parte*/
 
 /*SEGUNDA PARTE: Texto en grande.
@@ -339,13 +271,14 @@ Aquí también se define: estilo d ela clase .Contenido para el resto de la pág
 @media(max-width: 700px){
     .Contenido{
         margin: auto ;
-        padding: 0rem 2rem 4rem;
+        padding: 0rem 0rem 3rem;
 
         top: -30%;
     }
 }
 
 .Contenido--portada{
+    width: 100%;
     min-height: 100vh;
     position: static;
     z-index: 3;
@@ -365,6 +298,13 @@ Aquí también se define: estilo d ela clase .Contenido para el resto de la pág
     }
 }
 
+@media(max-width: 700px){
+    .Contenido--portada{
+        padding: 0rem 0rem 4rem;
+        min-height: fit-content;
+    }
+}
+
 
 .Destacado{
     width: 100%;
@@ -378,8 +318,6 @@ Aquí también se define: estilo d ela clase .Contenido para el resto de la pág
     max-width: 1400px;
     margin: auto;
     z-index: 1;
-
-
 }
 
 @media(max-width: 1000px){
@@ -391,13 +329,12 @@ Aquí también se define: estilo d ela clase .Contenido para el resto de la pág
 
 @media(max-width: 700px){
     .Destacado{
+        width: 100%;
         font-size: 1.9rem;
-        min-height: 80vh;
-        line-height: 2rem;
-    
+        line-height: 2.1rem;
 
         padding: 0rem 1rem 0rem;
-    
+        text-align: left;
     }
 }
 
@@ -448,15 +385,13 @@ Aquí también se define: estilo d ela clase .Contenido para el resto de la pág
 
 @media(max-width: 800px){
     .Contenido-h2{
-        width: 85%;
+        width: 90%;
         min-height: fit-content;
         margin: auto;
         padding-top: 3rem;
 
         font-size: var(--tipografia-titulos-movil);
         line-height: var(--tipografia-titulos-movil);
-        text-align: center;
-
     }
 }
 
@@ -482,11 +417,9 @@ Aquí también se define: estilo d ela clase .Contenido para el resto de la pág
 
 @media(max-width:800px){
     .Contenido-p{
-        width: 95%;
+        width: 90%;
         margin: auto;
         padding-top: 3rem;
-        text-align: center;
-    
     }
 }
 
@@ -509,7 +442,7 @@ Aquí también se define: estilo d ela clase .Contenido para el resto de la pág
 
 @media(max-width:800px){
     .Contenido-button{
-        margin:2rem auto;
+        margin:2rem 0rem 0rem 5%;
 
     }
 }
