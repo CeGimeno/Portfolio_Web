@@ -95,11 +95,11 @@ button , label{
     }
 }
 
-@media(max-width: 600px){
+/* @media(max-width: 600px){
     .Cuadricula-wrapper{
         grid-template-columns: repeat( 1 , 1fr);
     }
-}
+} */
 
 .Cuadricula-individual:hover{
     background-color: var(--color-azul);

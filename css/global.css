@@ -319,14 +319,14 @@ button , label{
         align-items: center;
     }
 }
-.Columna-izquierda{
+.Columna--izquierda{
     justify-content: start;
 
     padding: 0rem 0rem 0rem 4rem;
 }
 
 @media(max-width:800px){
-    .Columna-izquierda{
+    .Columna--izquierda{
         padding:0rem;
     }
 }

@@ -124,21 +124,33 @@ if (buttons && parrafos){
 
 class Footer extends HTMLElement {
   connectedCallback() {
-    this.innerHTML = `<div class="Footer">
-        <div class="Footer-columna Columna-izquierda">
+    this.innerHTML = `    <div class="Footer">
+        <div class="Footer-columna Columna--izquierda">
             <aside class="Footer-aside">Carmen Gimeno - diseño gráfico & web</aside>
         </div>
-        <div class="Footer-columna Columna-derecha">
+        <div class="Footer-columna Columna--centro">
             <nav class="Footer-nav">
                 <ul class="Footer-ul">
                     <li class="Footer-li">
-                        <a href="" class="Footer-a">Instagram</a>
+                        <a href="https://www.instagram.com/cegimeno/" target="_blank" rel="noopener" class="Footer-a">Instagram</a>
                     </li>
                     <li class="Footer-li">
-                        <a href="" class="Footer-a">Tiktok</a>
+                        <a href="https://www.tiktok.com/@cegimeno" target="_blank" rel="noopener" class="Footer-a">Tiktok</a>
                     </li>
                     <li class="Footer-li">
-                        <a href="" class="Footer-a">Email</a>
+                        <a href="mailto:holacegimeno@gmail.com" class="Footer-a">Email</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="Footer-columna Columna--izquierda">
+            <nav class="Footer-nav">
+                <ul class="Footer-ul">
+                    <li class="Footer-li">
+                        <a href="politica-de-privacidad.html" class="Footer-a">Politica de privacidad</a>
+                    </li>
+                    <li class="Footer-li">
+                        <a href="aviso-legal.html" class="Footer-a">Aviso legal</a>
                     </li>
                 </ul>
             </nav>

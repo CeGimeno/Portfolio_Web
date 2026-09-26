@@ -1,3 +1,6 @@
+/* Este documento es el estilo css de politico-de-privacidad-html pero también para
+aviso-legal.html, ya que comparten la misma estructura y etiquetas */
+
 :root{
        scroll-behavior: smooth;
         font-size:100%;
@@ -52,4 +55,34 @@ fieldset {
 }
 button , label{
     cursor: pointer;
+}
+
+.Contenido{
+    width: 80%;
+    max-width: 1100px;
+    margin: calc(var(--medida-cabecera) + 2rem) auto var( --medida-cabecera);
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: start;
+}
+
+@media(max-width:700px){
+    .Contenido{
+        width: 90%;
+
+    }
+}
+
+.Contenido-h1{
+    width: 100%;
+    margin: 0rem auto 2rem;
+
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.Contenido-h2{
+    font-weight: 600;
 }
