@@ -144,6 +144,12 @@ main {
     text-align: center;
 }
 
+@media(max-width:800px){
+    .Portada-p , .Contenido-p{
+        width: 100%;
+    }
+}
+
 .Contenido-seccion{
     width: 90%;
     margin: 0rem 0rem 2rem;
@@ -173,4 +179,10 @@ main {
     display: grid;
     grid-template-columns: repeat( 2, 1fr);
     gap: 1.5rem;
+}
+
+@media(max-width:800px){
+    .Contenido-grid{
+        margin: 0rem 0rem 2rem;
+    }
 }

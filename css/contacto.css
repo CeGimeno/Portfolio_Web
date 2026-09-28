@@ -173,7 +173,7 @@ main{
     }
 }
 
-@media(max-width: 500px){
+@media(max-width: 600px){
     .Contenido-enlace{
         font-size: 1.5rem;
     }
@@ -204,6 +204,7 @@ main{
 @media(max-width: 700px) {
     .Acordeon-div {
         width: 100%;
+        padding: 3rem 5% 3rem;
     }
 }
 
@@ -267,6 +268,7 @@ main{
 @media(max-width:700px) {
     .Acordeon-button {
         text-align: center;
+        font-size: 1.8rem;
     }
 }
 
