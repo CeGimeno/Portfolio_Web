@@ -64,13 +64,13 @@ cabeceraCerrar.addEventListener(`click`, () => {
 class Menu extends HTMLElement {
   connectedCallback() {
     this.innerHTML = ` <div class="Menu">
-        <div class="Menu-link"><a href="la-cirera.html" class="Menu-a">La Cirera</a></div>
-        <div class="Menu-link"><a href="esporas-en-la-lengua.html" class="Menu-a">esporas en la lengua</a></div>
-        <div class="Menu-link"><a href="sons-al-botanic.html" class="Menu-a">Sons al Botànic</a></div>
-        <div class="Menu-link"><a href="de-marti.html" class="Menu-a">Puñales de Martín</a></div>
-        <div class="Menu-link"><a href="Traca.html" class="Menu-a">TRACA</a></div>
-        <div class="Menu-link"><a href="ramon-perales.html" class="Menu-a">Ramonkey Perales</a></div>
-        <div class="Menu-link"><a href="carmen-casas.html" class="Menu-a">Carmen Casas</a></div>
+        <div class="Menu-link"><a href="la-cirera.html" class="Menu-a" title="Ver proyecto La Cirera">La Cirera</a></div>
+        <div class="Menu-link"><a href="esporas-en-la-lengua.html" class="Menu-a" title="Ver proyecto Esporas en la lengua">Esporas en la lengua</a></div>
+        <div class="Menu-link"><a href="sons-al-botanic.html" class="Menu-a" title="Ver proyecto Sons al Botànic">Sons al Botànic</a></div>
+        <div class="Menu-link"><a href="de-marti.html" class="Menu-a" title="Ver proyecto Puñales de Martín">Puñales de Martín</a></div>
+        <div class="Menu-link"><a href="Traca.html" class="Menu-a" title="Ver proyecto TRACA">TRACA</a></div>
+        <div class="Menu-link"><a href="ramon-perales.html" class="Menu-a" title="Ver proyecto Ramoneky Perales">Ramonkey Perales</a></div>
+        <div class="Menu-link"><a href="carmen-casas.html" class="Menu-a" title="Ver proyecto Carmen Casas">Carmen Casas</a></div>
     </div>`
   }
 }
@@ -132,13 +132,13 @@ class Footer extends HTMLElement {
             <nav class="Footer-nav">
                 <ul class="Footer-ul">
                     <li class="Footer-li">
-                        <a href="https://www.instagram.com/cegimeno/" target="_blank" rel="noopener" class="Footer-a">Instagram</a>
+                        <a href="https://www.instagram.com/cegimeno/" target="_blank" rel="noopener" class="Footer-a" title="Abrir nueva pestaña con el Instagram cegimeno">Instagram</a>
                     </li>
                     <li class="Footer-li">
-                        <a href="https://www.tiktok.com/@cegimeno" target="_blank" rel="noopener" class="Footer-a">Tiktok</a>
+                        <a href="https://www.tiktok.com/@cegimeno" target="_blank" rel="noopener" class="Footer-a" title="Abrir nueva pestaña con el Tiktok cegimeno" >Tiktok</a>
                     </li>
                     <li class="Footer-li">
-                        <a href="mailto:holacegimeno@gmail.com" class="Footer-a">Email</a>
+                        <a href="mailto:holacegimeno@gmail.com" class="Footer-a title="Enviar un email a holacegimeno@gmail.com">Email</a>
                     </li>
                 </ul>
             </nav>
@@ -147,10 +147,10 @@ class Footer extends HTMLElement {
             <nav class="Footer-nav">
                 <ul class="Footer-ul">
                     <li class="Footer-li">
-                        <a href="politica-de-privacidad.html" class="Footer-a">Politica de privacidad</a>
+                        <a href="politica-de-privacidad.html" class="Footer-a" title="Abrir página sobre política de privacidad">Politica de privacidad</a>
                     </li>
                     <li class="Footer-li">
-                        <a href="aviso-legal.html" class="Footer-a">Aviso legal</a>
+                        <a href="aviso-legal.html" class="Footer-a" title="Abrir página sobre aviso legal">Aviso legal</a>
                     </li>
                 </ul>
             </nav>
