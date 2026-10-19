@@ -62,6 +62,12 @@ Tiene mucha importancia la imagen visual y generación de una identidad gráfica
 ├── .gitattributes
 └── README.md│   └── estilos.css
 
+## Carcaterísticas técnicas
+- La página web está construida con HMTL, CSS y JavaScript
+- Los colores, las tipografías y la altura de la cabecera se guardan en variables CSS
+- El diseño es responsive utilizando la regla @media (media query)
+- Las partes que se repiten en varias páginas son Web Components en global.js
+
 ## Licencia
 
 © 2026 carmen gimeno. Todos los derechos reservados.
