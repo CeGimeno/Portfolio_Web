@@ -263,8 +263,19 @@ label {
 }
 
 /* Especificaciones de algunas imagenes */
+.Servicios-img--editorial{
+    transform: translateY(1rem) translateX(-6rem) rotate(5deg);
+}
+
 .Servicios-img--web {
     transform: translateY(-10rem) rotate(-10deg);
+}
+
+@media (max-width: 900px){
+    .Servicios-img--web{
+        width:80%;
+        transform: translateY(4rem) translateX(-4rem) rotate(-10deg)
+    }
 }
 
 .Servicios-img--rrss {
