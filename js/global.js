@@ -15,7 +15,7 @@ class Cabecera extends HTMLElement {
       <li class="Cabecera-li"> <a href="contacto.html" class="Cabecera-a--contacto">Contacto</a></li>
     </ul>
   </nav>  
-  <button class="Cabecera-button" tittle="Boton menu">
+  <button class="Cabecera-button" title="Boton menu">
    <span class="Cabecera-menu isVisible"> Menu</span>
     <span class="Cabecera-cerrar">Cerrar</span></button>
   <div class="Desplegable">
@@ -138,7 +138,7 @@ class Footer extends HTMLElement {
                         <a href="https://www.tiktok.com/@cegimeno" target="_blank" rel="noopener" class="Footer-a" title="Abrir nueva pestaña con el Tiktok cegimeno" >Tiktok</a>
                     </li>
                     <li class="Footer-li">
-                        <a href="mailto:holacegimeno@gmail.com" class="Footer-a title="Enviar un email a holacegimeno@gmail.com">Email</a>
+                        <a href="mailto:holacegimeno@gmail.com" class="Footer-a" title="Enviar un email a holacegimeno@gmail.com">Email</a>
                     </li>
                 </ul>
             </nav>
