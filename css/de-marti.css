@@ -136,7 +136,7 @@ main {
     font-family: var(--tipografia-principal);
     font-weight: var(--tipografia-principal-light);
     font-size: var(--tipografia-principal-size);
-    text-align: center;
+    /* text-align: center; */
 }
 
 @media(max-width:800px) {
@@ -157,11 +157,13 @@ main {
 
 .Contenido-seccion--fotos {
     grid-template-columns: 60% 40%;
+
 }
 
 @media(max-width:800px) {
     .Contenido-seccion--fotos {
         grid-template-columns: repeat(1, 1fr);
+        width: 100%;
     }
 }
 
@@ -172,6 +174,7 @@ main {
 @media(max-width:800px) {
     .Contenido-seccion--mix {
         grid-template-columns: repeat(1, 1fr);
+        width: 100%;
     }
 }
 
@@ -182,16 +185,19 @@ main {
     align-items: start;
     text-align: left;
     width: 90%;
+
 }
 
 @media(max-width:800px) {
     .Contenido-p--grid {
-        text-align: center;
+        /* text-align: center; */
+        width: 100%;
+    
     }
 }
 
 .Contenido-grid {
-    margin: 0rem 0rem 2rem;
+    margin: 1rem 0rem 2rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;

@@ -227,17 +227,27 @@ main {
 
     position: relative;
     z-index: 1;
+
+}
+
+@media(max-width:700px) {
+    .Acordeon {
+        padding: 3rem 5% 3rem;
+    }
 }
 
 .Acordeon-div {
     width: 70%;
     max-width: 1200px;
+
+
+
 }
 
 @media(max-width: 700px) {
     .Acordeon-div {
         width: 100%;
-        padding: 3rem 5% 3rem;
+        padding: 3rem 0% 3rem;
     }
 }
 
@@ -264,6 +274,8 @@ main {
 
     }
 }
+
+/* Estilo de la lista del acordeon */
 
 .Acordeon-ul {
     width: 100%;
@@ -292,6 +304,7 @@ main {
     font-size: 2rem;
     font-weight: var(--tipografia-principal-light);
     color: var(--color-beige);
+    text-align: left;
 }
 
 .Acordeon-button:hover {
@@ -300,7 +313,6 @@ main {
 
 @media(max-width:700px) {
     .Acordeon-button {
-        text-align: center;
         font-size: 1.8rem;
     }
 }

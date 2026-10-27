@@ -418,6 +418,7 @@ CONTIENE:
 @media(max-width: 700px) {
     .Acordeon-div {
         width: 100%;
+        padding: 3rem 5% 3rem;
     }
 }
 
@@ -442,6 +443,8 @@ CONTIENE:
 
     }
 }
+
+/* Estilo de la lista del acordeon */
 
 .Acordeon-ul {
     width: 100%;
@@ -469,17 +472,13 @@ CONTIENE:
 .Acordeon-button {
     font-size: 2rem;
     font-weight: var(--tipografia-principal-light);
+    text-align: left;
 }
 
 .Acordeon-button:hover {
     color: var(--color-azul)
 }
 
-@media(max-width:700px) {
-    .Acordeon-button {
-        text-align: center;
-    }
-}
 
 .Acordeon-p {
     width: 100%;

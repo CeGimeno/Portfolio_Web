@@ -156,11 +156,16 @@ main {
     text-align: center;
 }
 
+.Contenido-p{
+    margin: 0rem 0rem 2rem;
+}
+
 @media(max-width:800px) {
 
     .Portada-p,
     .Contenido-p {
         width: 100%;
+        text-align: left;
     }
 }
 

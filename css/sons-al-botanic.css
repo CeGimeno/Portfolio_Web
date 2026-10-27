@@ -318,3 +318,7 @@ main {
 .Columna-cartel {
     width: 40%;
 }
+
+.Columna-cartel--final{
+    margin: 0rem 0rem 5rem;
+}

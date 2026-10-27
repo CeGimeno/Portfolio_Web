@@ -141,11 +141,11 @@
      }
  }
 
- @media(max-width: 800px) {
+ /* @media(max-width: 800px) {
      .Portada-p {
          text-align: center;
      }
- }
+ } */
 
  .Contenido-seccion {
      width: 100%;
@@ -196,11 +196,11 @@
      }
  }
 
- @media(max-width: 800px) {
+ /* @media(max-width: 800px) {
      .Contenido-p {
          text-align: center;
      }
- }
+ } */
 
  .Contenido-p--columna {
      width: 100%;

@@ -134,8 +134,7 @@ main {
     gap: 2rem;
 }
 
-.Portada-p,
-.Contenido-p {
+.Portada-p {
     width: 70%;
     margin: 1.2rem 0rem;
 
@@ -147,11 +146,13 @@ main {
 
 @media(max-width:800px) {
 
-    .Portada-p,
-    .Contenido-p {
+    .Portada-p {
         width: 100%;
+        text-align: left;
     }
 }
+
+
 
 .Contenido-seccion {
     width: 90%;
