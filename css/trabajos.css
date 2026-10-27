@@ -4,43 +4,64 @@ trabajos.css
 - Cabecera
 -Galeria
 \**/
-:root{
-       scroll-behavior: smooth;
-        font-size:100%;
-        background-color: var(--color-beige);
+:root {
+    scroll-behavior: smooth;
+    font-size: 100%;
+    background-color: var(--color-beige);
 
 
 }
-*{
-    margin:0;
-    padding:0;
+
+* {
+    margin: 0;
+    padding: 0;
     border: 0;
     box-sizing: border-box;
 }
-li{
+
+li {
     list-style: none;
 }
-a{
+
+a {
     display: block;
-    color:inherit;
+    color: inherit;
     text-decoration: none;
 }
-p a{
+
+p a {
     display: inline;
 }
-h1 , h2 , h3 , h4 , h5 , h6 , strong , em , mark, pre, code{
-    font:inherit;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+em,
+mark,
+pre,
+code {
+    font: inherit;
 }
-mark{
-    background-color:transparent;
+
+mark {
+    background-color: transparent;
 }
-picture , img, video , iframe {
+
+picture,
+img,
+video,
+iframe {
     display: block;
     max-width: 100%;
     width: 100%;
     height: initial;
 }
-svg{
+
+svg {
     display: block;
     width: initial;
     height: initial;
@@ -48,50 +69,61 @@ svg{
 }
 
 
-form , input , select , option , textarea , label , fieldset , legend , button{
+form,
+input,
+select,
+option,
+textarea,
+label,
+fieldset,
+legend,
+button {
     display: block;
-    font:inherit;
+    font: inherit;
     background-color: initial;
 }
+
 fieldset {
-    border : none ;
+    border: none;
 }
-button , label{
+
+button,
+label {
     cursor: pointer;
 }
 
 /* pseudo-elemento especifico para personalizar la cabecera en cada página*/
 .Cabecera-a--trabajos::before {
-  content: "";
-  width: 15px;
-  height: 15px;
-  background-color: var(--color-azul);
-  display: inline-block;
-  border-radius: 50%;
-  margin-right: .4rem;
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-color: var(--color-azul);
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: .4rem;
 }
 
 
 /*Cuadricula de trabajos*/
 
-.Cuadricula{
+.Cuadricula {
     width: 90%;
     margin: 1rem auto 3rem;
-    
+
 }
 
-.Cuadricula-wrapper{
+.Cuadricula-wrapper {
     max-width: 2000px;
     margin: auto;
 
     display: grid;
-    grid-template-columns: repeat( 4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
 }
 
-@media(max-width: 1000px){
-    .Cuadricula-wrapper{
-        grid-template-columns: repeat( 2, 1fr);
+@media(max-width: 1000px) {
+    .Cuadricula-wrapper {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -101,24 +133,24 @@ button , label{
     }
 } */
 
-.Cuadricula-individual:hover{
+.Cuadricula-individual:hover {
     background-color: var(--color-azul);
-  
+
 }
 
-.Cuadricula-img:hover{
+.Cuadricula-img:hover {
     opacity: 0.7;
 
 }
 
-.Cuadricula-titulo{
+.Cuadricula-titulo {
     margin: 0rem 0rem .2rem;
 
     font-weight: var(--tipografia-principal-regular);
     font-size: var(--tipografia-principal-size);
 }
 
-.Cuadricula-clase{
+.Cuadricula-clase {
     font-weight: var(--tipografia-principal-regular);
     font-size: var(--tipografia-principal-size);
 }

@@ -5,7 +5,9 @@
 const servicios = document.querySelectorAll(`.Servicios`)
 const imagenes = document.querySelectorAll(`.Servicios-columna--img`)
 
-//Mismo breakpoint que en css/servicios.css, donde .Servicios pasa a layout apilado (móvil)
+//Mismo breakpoint que en css/servicios.css, donde .Servicios pasa a layout apilado (móvil). 
+//Todo lo relacionado con el tamaño móvil en este archivo JavaScript ha sido pedido a la IA
+
 const mobileQuery = window.matchMedia(`(max-width: 800px)`)
 
 //Cuando hago click en servicios, la imagen asociada a cada uno de los textos se vuelve visible
@@ -23,7 +25,7 @@ servicios.forEach((_,i)=>{
     })
 })
 
-//En tamaño movil, cuando el scroll pasa por un elemento de servicios, aparece la imagen relacionada a ese texto
+//En tamaño movil, cuando el scroll pasa por un elemento de servicios, aparece la imagen relacionada a ese texto. CÓDIGO SOLICITADO A LA IA
 
 const serviciosObserver = new IntersectionObserver((entries)=>{
     //En escritorio la activación va por hover, no por scroll

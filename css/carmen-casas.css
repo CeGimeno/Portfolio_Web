@@ -128,8 +128,8 @@ main {
 
 }
 
-.Portada-a{
-      width: 70%;
+.Portada-a {
+    width: 70%;
     margin: 1.2rem 0rem;
     color: var(--color-azul);
 
@@ -140,12 +140,13 @@ main {
     text-decoration: underline;
 }
 
-.Portada-img{
+.Portada-img {
     width: 100%;
     margin: 0rem 0rem 2rem;
 }
 
-.Portada-p , .Contenido-p{
+.Portada-p,
+.Contenido-p {
     width: 70%;
     margin: 1.2rem 0rem;
 
@@ -155,24 +156,26 @@ main {
     text-align: center;
 }
 
-@media(max-width:800px){
-    .Portada-p , .Contenido-p{
+@media(max-width:800px) {
+
+    .Portada-p,
+    .Contenido-p {
         width: 100%;
     }
 }
 
 
 
-.Contenido-grid{
+.Contenido-grid {
     display: grid;
-    grid-template-columns: repeat( 2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
 }
 
-.Contenido-img{
+.Contenido-img {
     margin: 0rem auto 4rem;
 }
 
-.Contenido-img--final{
+.Contenido-img--final {
     width: 80%;
 }

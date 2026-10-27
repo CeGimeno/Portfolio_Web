@@ -4,43 +4,64 @@ index.css
 - Cabecera
 -Main
 \**/
-:root{
-       scroll-behavior: smooth;
-        font-size:100%;
-        background-color: var(--color-beige);
+:root {
+    scroll-behavior: smooth;
+    font-size: 100%;
+    background-color: var(--color-beige);
 
 
 }
-*{
-    margin:0;
-    padding:0;
+
+* {
+    margin: 0;
+    padding: 0;
     border: 0;
     box-sizing: border-box;
 }
-li{
+
+li {
     list-style: none;
 }
-a{
+
+a {
     display: block;
-    color:inherit;
+    color: inherit;
     text-decoration: none;
 }
-p a{
+
+p a {
     display: inline;
 }
-h1 , h2 , h3 , h4 , h5 , h6 , strong , em , mark, pre, code{
-    font:inherit;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+em,
+mark,
+pre,
+code {
+    font: inherit;
 }
-mark{
-    background-color:transparent;
+
+mark {
+    background-color: transparent;
 }
-picture , img, video , iframe {
+
+picture,
+img,
+video,
+iframe {
     display: block;
     max-width: 100%;
     width: 100%;
     height: initial;
 }
-svg{
+
+svg {
     display: block;
     width: initial;
     height: initial;
@@ -48,15 +69,26 @@ svg{
 }
 
 
-form , input , select , option , textarea , label , fieldset , legend , button{
+form,
+input,
+select,
+option,
+textarea,
+label,
+fieldset,
+legend,
+button {
     display: block;
-    font:inherit;
+    font: inherit;
     background-color: initial;
 }
+
 fieldset {
-    border : none ;
+    border: none;
 }
-button , label{
+
+button,
+label {
     cursor: pointer;
 }
 
@@ -64,13 +96,13 @@ button , label{
 
 /* pseudo-elemento especifico para personalizar la cabecera en cada página*/
 .Cabecera-a--inicio::before {
-  content: "";
-  width: 15px;
-  height: 15px;
-  background-color: var(--color-azul);
-  display: inline-block;
-  border-radius: 50%;
-  margin-right: .4rem;
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-color: var(--color-azul);
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: .4rem;
 }
 
 /*PRIMER BLOQUE LLAMADO PORTADA:
@@ -78,7 +110,7 @@ button , label{
 - texto presentacion DESTACADO
 -Elementos objetos*/
 
-.Portada{
+.Portada {
     min-height: 50vh;
     display: flex;
     flex-flow: column nowrap;
@@ -88,18 +120,18 @@ button , label{
     position: relative;
 
     max-width: 1200px;
-    margin:auto;
-    z-index:1
+    margin: auto;
+    z-index: 1
 }
 
-@media(max-width:700px){
-    .Portada{
+@media(max-width:700px) {
+    .Portada {
         min-height: auto;
         margin: 0rem 0rem 2rem;
     }
 }
 
-.Titulo{
+.Titulo {
     position: sticky;
     top: calc(var(--medida-cabecera) + 1rem);
 
@@ -108,8 +140,8 @@ button , label{
     z-index: 1;
 }
 
-@media(max-width:700px){
-    .Titulo{
+@media(max-width:700px) {
+    .Titulo {
         font-size: 1.4rem;
         font-weight: 400;
     }
@@ -117,7 +149,7 @@ button , label{
 
 /*Objetos ordenador + taza + boli.*/
 
-.Objeto{
+.Objeto {
     width: 100%;
 
     display: flex;
@@ -128,80 +160,83 @@ button , label{
     top: 16rem;
     right: 5rem;
     z-index: 0;
-    
+
 
 }
 
 
-@media(max-width: 800px){
-    .Objeto{
+@media(max-width: 800px) {
+    .Objeto {
         top: 20rem;
     }
 }
 
 /*Especificaciones objeto taza*/
 
-.Objeto-taza{
+.Objeto-taza {
     width: 20%;
     height: fit-content;
     position: relative;
 
     animation: giroTaza linear both;
     animation-timeline: scroll(root block);
-    animation-range: entry(40%)  exit(100%);
+    animation-range: entry(40%) exit(100%);
     transform-origin: top right;
 
 }
 
 @keyframes giroTaza {
-    from{
+    from {
         transform: rotate(-18deg) translateX(-20%) translateY(-50%);
     }
-    to{
+
+    to {
         transform: rotate(100deg) translateX(-20%) translateY(-50%);
     }
-    
+
 }
 
-@media(max-width: 1000px){
-    .Objeto-taza{
+@media(max-width: 1000px) {
+    .Objeto-taza {
         width: 30%;
     }
 }
 
 /*Especificaciones objeto ordenador*/
 
-.Objeto-ordenador{
+.Objeto-ordenador {
     width: 30%;
     height: fit-content;
     position: relative;
 
     animation: giroOrdenador linear both;
     animation-timeline: scroll(root block);
-    animation-range: entry(0%)  exit(100%);
+    animation-range: entry(0%) exit(100%);
     transform-origin: top right;
 
 }
 
 @keyframes giroOrdenador {
-    from{
+    from {
         transform: rotate(-10deg);
     }
-    to{
+
+    to {
         transform: rotate(70deg);
     }
-    
+
 }
 
-@media(max-width: 700px){
-    .Objeto-ordenador{
+@media(max-width: 700px) {
+    .Objeto-ordenador {
         width: 50%;
         margin: 0rem 0rem 0rem;
     }
 }
+
 /*Especificaciones objeto boli*/
 
-.Objeto-boli{
+.Objeto-boli {
     width: 30%;
     height: fit-content;
     position: absolute;
@@ -211,30 +246,32 @@ button , label{
 
     animation: giroBoli linear both;
     animation-timeline: scroll(root block);
-    animation-range: entry(0%)  exit(100%);
+    animation-range: entry(0%) exit(100%);
     transform-origin: center bottom;
 
 }
 
 @keyframes giroBoli {
-    from{
+    from {
         transform: rotate(0deg);
     }
-    to{
+
+    to {
         transform: rotate(190deg);
     }
-    
+
 }
 
-@media(max-width: 700px){
-    .Objeto-boli{
+@media(max-width: 700px) {
+    .Objeto-boli {
         width: 50%;
 
         left: 50%;
-        top:120%;
+        top: 120%;
     }
 }
-.Objeto-img{
+
+.Objeto-img {
     width: 80%;
 }
 
@@ -244,69 +281,69 @@ button , label{
 Aquí también se define: estilo d ela clase .Contenido para el resto de la página
 */
 
-.Contenido{
-    min-height: calc( 100vh - var(--medida-cabecera));
+.Contenido {
+    min-height: calc(100vh - var(--medida-cabecera));
     z-index: 1;
 
     padding: 3rem 6rem;
-    margin:auto;
+    margin: auto;
 
 
     position: sticky;
     top: var(--medida-cabecera);
 }
 
-@media(min-height: 800px){
-    .Contenido{
-    position: static;
-}
-}
-
-@media(max-width: 1000px){
-    .Contenido{
-    position: static;
-}
+@media(min-height: 800px) {
+    .Contenido {
+        position: static;
+    }
 }
 
-@media(max-width: 700px){
-    .Contenido{
-        margin: auto ;
+@media(max-width: 1000px) {
+    .Contenido {
+        position: static;
+    }
+}
+
+@media(max-width: 700px) {
+    .Contenido {
+        margin: auto;
         padding: 0rem 0rem 3rem;
 
         top: -30%;
     }
 }
 
-.Contenido--portada{
+.Contenido--portada {
     width: 100%;
     min-height: 100vh;
     position: static;
     z-index: 3;
-    
+
 }
 
-@media(max-width: 1000px){
-    .Contenido--portada{
+@media(max-width: 1000px) {
+    .Contenido--portada {
         padding: 0rem 4rem 3rem;
     }
 }
 
-@media(min-height: 800px){
-    .Contenido--portada{
+@media(min-height: 800px) {
+    .Contenido--portada {
         min-height: fit-content;
         padding: 0rem 1rem 6rem
     }
 }
 
-@media(max-width: 700px){
-    .Contenido--portada{
+@media(max-width: 700px) {
+    .Contenido--portada {
         padding: 0rem 0rem 4rem;
         min-height: fit-content;
     }
 }
 
 
-.Destacado{
+.Destacado {
     width: 100%;
     position: relative;
 
@@ -320,15 +357,15 @@ Aquí también se define: estilo d ela clase .Contenido para el resto de la pág
     z-index: 1;
 }
 
-@media(max-width: 1000px){
-    .Destacado{
+@media(max-width: 1000px) {
+    .Destacado {
         font-size: 2.5rem;
         line-height: 2.5rem;
     }
 }
 
-@media(max-width: 700px){
-    .Destacado{
+@media(max-width: 700px) {
+    .Destacado {
         width: 100%;
         font-size: 1.5rem;
         line-height: 1.7rem;
@@ -342,17 +379,17 @@ Aquí también se define: estilo d ela clase .Contenido para el resto de la pág
 /* PANTALLAS DE CONTENIDO  */
 
 
-.Contenido--azul{
+.Contenido--azul {
     background-color: var(--color-azul);
 }
 
 
 
-.Contenido-div{
+.Contenido-div {
     margin: 2rem 0rem 0rem 0.5rem;
 }
 
-.Contenido-h2{
+.Contenido-h2 {
     width: 80%;
     font-size: var(--tipografia-titulos-size);
     font-weight: var(--tipografia-titulos-bold);
@@ -360,31 +397,31 @@ Aquí también se define: estilo d ela clase .Contenido para el resto de la pág
     line-height: var(--tipografia-titulos-size)
 }
 
-.Contenido--beis{
+.Contenido--beis {
     background-color: var(--color-beige);
 }
 
-.Contenido-h2--beis{
+.Contenido-h2--beis {
     color: var(--color-beige)
 }
 
-@media(max-width: 1200px){
-    .Contenido-h2{
+@media(max-width: 1200px) {
+    .Contenido-h2 {
         font-size: 4rem;
         line-height: 4rem;
     }
 }
 
-@media(max-width: 1000px){
-    .Contenido-h2{
+@media(max-width: 1000px) {
+    .Contenido-h2 {
         font-size: 4rem;
         line-height: 4rem;
         width: 100%;
     }
 }
 
-@media(max-width: 800px){
-    .Contenido-h2{
+@media(max-width: 800px) {
+    .Contenido-h2 {
         width: 90%;
         min-height: fit-content;
         margin: auto;
@@ -396,7 +433,7 @@ Aquí también se define: estilo d ela clase .Contenido para el resto de la pág
 }
 
 
-.Contenido-p{
+.Contenido-p {
     width: 70%;
     font-size: var(--tipografia-principal-size);
 
@@ -404,19 +441,20 @@ Aquí también se define: estilo d ela clase .Contenido para el resto de la pág
 }
 
 
-.Contenido-p--beis{
+.Contenido-p--beis {
     color: var(--color-beige);
     margin: 3rem 0rem 1rem;
 }
 
-@media(max-width:1000px){
-    .Contenido-p{
-        width: 90%;;
+@media(max-width:1000px) {
+    .Contenido-p {
+        width: 90%;
+        ;
     }
 }
 
-@media(max-width:800px){
-    .Contenido-p{
+@media(max-width:800px) {
+    .Contenido-p {
         width: 90%;
         margin: auto;
         padding-top: 3rem;
@@ -425,7 +463,7 @@ Aquí también se define: estilo d ela clase .Contenido para el resto de la pág
 
 
 
-.Contenido-button{
+.Contenido-button {
     width: 10rem;
     min-height: 3rem;
     background-color: var(--color-azul);
@@ -435,14 +473,14 @@ Aquí también se define: estilo d ela clase .Contenido para el resto de la pág
     font-weight: 400;
 }
 
-.Contenido-button:hover{
+.Contenido-button:hover {
     color: var(--color-negro);
     text-decoration: underline;
 }
 
-@media(max-width:800px){
-    .Contenido-button{
-        margin:2rem 0rem 0rem 5%;
+@media(max-width:800px) {
+    .Contenido-button {
+        margin: 2rem 0rem 0rem 5%;
 
     }
 }

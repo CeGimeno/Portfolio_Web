@@ -1,5 +1,8 @@
 "use strict"
 
+//En este documento se ha pedido ayuda a la IA en los casos en los que solo quería que se activara un bloque de código JavaScript
+//El objetivo era evitar el error.console
+
 // Cabecera para añadir en el HTML
 
 class Cabecera extends HTMLElement {
