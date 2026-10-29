@@ -154,3 +154,31 @@ label {
     font-weight: var(--tipografia-principal-regular);
     font-size: var(--tipografia-principal-size);
 }
+
+/*Formato de estilo para el efecto hover del proyecto que está aún sin publicar*/
+.Cuadricula-individual--proximamente {
+    position: relative;
+}
+
+.Cuadricula-img--azul {
+    position: static;
+    top: 0;
+    left: 0;
+}
+
+.Cuadricula-img--verde {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+@media(max-width: 800px) {
+    .Cuadricula-img--verde {
+        opacity: 1;
+    }
+}
+
+.Cuadricula-titulo-prox {
+    position: static;
+}
